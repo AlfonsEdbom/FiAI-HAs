@@ -1,0 +1,791 @@
+min_max_neurons = [i for i in range(100, 550, 100)]
+max_hidden_layers = 4
+
+model = sklearn.neural_network.MLPClassifier(hidden_layer_sizes=permut, activation='relu', alpha=0.0001, batch_size='auto', learning_rate_init=0.001, max_iter=200)
+
+Xtrain[:5000, :], ytrain[:5000]
+Xval[:2500, :], yval[:2500]
+
+total time = 19517s = 325 min = 5.5 h
+
+Hidden layer sizes: (100,), validation accuracy: 0.9332, accumulated time 19.12684917449951
+Hidden layer sizes: (200,), validation accuracy: 0.95, accumulated time 41.24769163131714
+Hidden layer sizes: (300,), validation accuracy: 0.9484, accumulated time 71.77810502052307
+Hidden layer sizes: (400,), validation accuracy: 0.9464, accumulated time 106.37063813209534
+Hidden layer sizes: (500,), validation accuracy: 0.948, accumulated time 147.14510202407837
+Hidden layer sizes: (100, 100), validation accuracy: 0.9412, accumulated time 159.23729419708252
+Hidden layer sizes: (100, 200), validation accuracy: 0.9404, accumulated time 168.63566708564758
+Hidden layer sizes: (100, 300), validation accuracy: 0.9448, accumulated time 178.92415380477905
+Hidden layer sizes: (100, 400), validation accuracy: 0.9448, accumulated time 190.10875391960144
+Hidden layer sizes: (100, 500), validation accuracy: 0.9432, accumulated time 202.84269952774048
+Hidden layer sizes: (200, 100), validation accuracy: 0.9456, accumulated time 222.8571755886078
+Hidden layer sizes: (200, 200), validation accuracy: 0.9452, accumulated time 240.5987458229065
+Hidden layer sizes: (200, 300), validation accuracy: 0.944, accumulated time 260.65326738357544
+Hidden layer sizes: (200, 400), validation accuracy: 0.9468, accumulated time 278.21215748786926
+Hidden layer sizes: (200, 500), validation accuracy: 0.946, accumulated time 295.08304047584534
+Hidden layer sizes: (300, 100), validation accuracy: 0.9448, accumulated time 317.91251730918884
+Hidden layer sizes: (300, 200), validation accuracy: 0.9444, accumulated time 339.33024048805237
+Hidden layer sizes: (300, 300), validation accuracy: 0.9452, accumulated time 359.98999094963074
+Hidden layer sizes: (300, 400), validation accuracy: 0.9504, accumulated time 381.49714040756226
+Hidden layer sizes: (300, 500), validation accuracy: 0.9512, accumulated time 406.3701333999634
+Hidden layer sizes: (400, 100), validation accuracy: 0.946, accumulated time 431.5637481212616
+Hidden layer sizes: (400, 200), validation accuracy: 0.9492, accumulated time 458.2703959941864
+Hidden layer sizes: (400, 300), validation accuracy: 0.9456, accumulated time 486.1171045303345
+Hidden layer sizes: (400, 400), validation accuracy: 0.9492, accumulated time 512.1861333847046
+Hidden layer sizes: (400, 500), validation accuracy: 0.9504, accumulated time 541.4618606567383
+Hidden layer sizes: (500, 100), validation accuracy: 0.946, accumulated time 573.8777194023132
+Hidden layer sizes: (500, 200), validation accuracy: 0.9476, accumulated time 601.8080267906189
+Hidden layer sizes: (500, 300), validation accuracy: 0.9476, accumulated time 632.7123792171478
+Hidden layer sizes: (500, 400), validation accuracy: 0.9516, accumulated time 664.6100776195526
+Hidden layer sizes: (500, 500), validation accuracy: 0.948, accumulated time 697.7185356616974
+Hidden layer sizes: (100, 100, 100), validation accuracy: 0.9456, accumulated time 706.388350725174
+Hidden layer sizes: (100, 100, 200), validation accuracy: 0.9428, accumulated time 715.4610874652863
+Hidden layer sizes: (100, 100, 300), validation accuracy: 0.942, accumulated time 724.1169390678406
+Hidden layer sizes: (100, 100, 400), validation accuracy: 0.9408, accumulated time 733.5666689872742
+Hidden layer sizes: (100, 100, 500), validation accuracy: 0.9404, accumulated time 743.2617411613464
+Hidden layer sizes: (100, 200, 100), validation accuracy: 0.9452, accumulated time 752.381353855133
+Hidden layer sizes: (100, 200, 200), validation accuracy: 0.9476, accumulated time 761.8490331172943
+Hidden layer sizes: (100, 200, 300), validation accuracy: 0.9452, accumulated time 771.9889163970947
+Hidden layer sizes: (100, 200, 400), validation accuracy: 0.9448, accumulated time 781.8305974006653
+Hidden layer sizes: (100, 200, 500), validation accuracy: 0.9448, accumulated time 792.5100374221802
+Hidden layer sizes: (100, 300, 100), validation accuracy: 0.9404, accumulated time 801.8700065612793
+Hidden layer sizes: (100, 300, 200), validation accuracy: 0.9444, accumulated time 810.7333037853241
+Hidden layer sizes: (100, 300, 300), validation accuracy: 0.9496, accumulated time 820.8283071517944
+Hidden layer sizes: (100, 300, 400), validation accuracy: 0.942, accumulated time 833.0416452884674
+Hidden layer sizes: (100, 300, 500), validation accuracy: 0.9472, accumulated time 848.9670565128326
+Hidden layer sizes: (100, 400, 100), validation accuracy: 0.9452, accumulated time 858.3479204177856
+Hidden layer sizes: (100, 400, 200), validation accuracy: 0.944, accumulated time 869.0886533260345
+Hidden layer sizes: (100, 400, 300), validation accuracy: 0.9452, accumulated time 881.1424186229706
+Hidden layer sizes: (100, 400, 400), validation accuracy: 0.9468, accumulated time 897.6826946735382
+Hidden layer sizes: (100, 400, 500), validation accuracy: 0.9468, accumulated time 915.4755895137787
+Hidden layer sizes: (100, 500, 100), validation accuracy: 0.9432, accumulated time 926.5380039215088
+Hidden layer sizes: (100, 500, 200), validation accuracy: 0.9436, accumulated time 937.2513535022736
+Hidden layer sizes: (100, 500, 300), validation accuracy: 0.9468, accumulated time 952.8042330741882
+Hidden layer sizes: (100, 500, 400), validation accuracy: 0.946, accumulated time 971.4754085540771
+Hidden layer sizes: (100, 500, 500), validation accuracy: 0.9436, accumulated time 992.0758473873138
+Hidden layer sizes: (200, 100, 100), validation accuracy: 0.942, accumulated time 1006.4210691452026
+Hidden layer sizes: (200, 100, 200), validation accuracy: 0.9452, accumulated time 1022.827700138092
+Hidden layer sizes: (200, 100, 300), validation accuracy: 0.9448, accumulated time 1039.590503692627
+Hidden layer sizes: (200, 100, 400), validation accuracy: 0.9452, accumulated time 1057.4622175693512
+Hidden layer sizes: (200, 100, 500), validation accuracy: 0.94, accumulated time 1069.6536152362823
+Hidden layer sizes: (200, 200, 100), validation accuracy: 0.948, accumulated time 1084.1618156433105
+Hidden layer sizes: (200, 200, 200), validation accuracy: 0.9436, accumulated time 1100.925903558731
+Hidden layer sizes: (200, 200, 300), validation accuracy: 0.9404, accumulated time 1118.2500824928284
+Hidden layer sizes: (200, 200, 400), validation accuracy: 0.9456, accumulated time 1133.047509431839
+Hidden layer sizes: (200, 200, 500), validation accuracy: 0.946, accumulated time 1149.4755945205688
+Hidden layer sizes: (200, 300, 100), validation accuracy: 0.9548, accumulated time 1164.803113937378
+Hidden layer sizes: (200, 300, 200), validation accuracy: 0.9472, accumulated time 1179.8967487812042
+Hidden layer sizes: (200, 300, 300), validation accuracy: 0.9504, accumulated time 1194.5854671001434
+Hidden layer sizes: (200, 300, 400), validation accuracy: 0.9496, accumulated time 1210.888287782669
+Hidden layer sizes: (200, 300, 500), validation accuracy: 0.9356, accumulated time 1228.2204740047455
+Hidden layer sizes: (200, 400, 100), validation accuracy: 0.9432, accumulated time 1243.9707701206207
+Hidden layer sizes: (200, 400, 200), validation accuracy: 0.9512, accumulated time 1260.272405385971
+Hidden layer sizes: (200, 400, 300), validation accuracy: 0.95, accumulated time 1276.5411140918732
+Hidden layer sizes: (200, 400, 400), validation accuracy: 0.9484, accumulated time 1297.2287957668304
+Hidden layer sizes: (200, 400, 500), validation accuracy: 0.9488, accumulated time 1319.7326278686523
+Hidden layer sizes: (200, 500, 100), validation accuracy: 0.9516, accumulated time 1335.2639989852905
+Hidden layer sizes: (200, 500, 200), validation accuracy: 0.948, accumulated time 1351.0471768379211
+Hidden layer sizes: (200, 500, 300), validation accuracy: 0.9456, accumulated time 1370.5570344924927
+Hidden layer sizes: (200, 500, 400), validation accuracy: 0.9468, accumulated time 1390.7489185333252
+Hidden layer sizes: (200, 500, 500), validation accuracy: 0.9512, accumulated time 1418.2816331386566
+Hidden layer sizes: (300, 100, 100), validation accuracy: 0.9488, accumulated time 1437.3208184242249
+Hidden layer sizes: (300, 100, 200), validation accuracy: 0.9468, accumulated time 1456.584932088852
+Hidden layer sizes: (300, 100, 300), validation accuracy: 0.9484, accumulated time 1474.1261234283447
+Hidden layer sizes: (300, 100, 400), validation accuracy: 0.9484, accumulated time 1492.230792760849
+Hidden layer sizes: (300, 100, 500), validation accuracy: 0.9488, accumulated time 1514.4329302310944
+Hidden layer sizes: (300, 200, 100), validation accuracy: 0.9512, accumulated time 1533.1958010196686
+Hidden layer sizes: (300, 200, 200), validation accuracy: 0.9444, accumulated time 1552.420897245407
+Hidden layer sizes: (300, 200, 300), validation accuracy: 0.9472, accumulated time 1570.630218744278
+Hidden layer sizes: (300, 200, 400), validation accuracy: 0.9492, accumulated time 1588.956734418869
+Hidden layer sizes: (300, 200, 500), validation accuracy: 0.9496, accumulated time 1606.8508806228638
+Hidden layer sizes: (300, 300, 100), validation accuracy: 0.9472, accumulated time 1625.7685208320618
+Hidden layer sizes: (300, 300, 200), validation accuracy: 0.9496, accumulated time 1644.4410948753357
+Hidden layer sizes: (300, 300, 300), validation accuracy: 0.9516, accumulated time 1662.6281361579895
+Hidden layer sizes: (300, 300, 400), validation accuracy: 0.9508, accumulated time 1679.9937353134155
+Hidden layer sizes: (300, 300, 500), validation accuracy: 0.9496, accumulated time 1701.40052485466
+Hidden layer sizes: (300, 400, 100), validation accuracy: 0.9508, accumulated time 1719.3874373435974
+Hidden layer sizes: (300, 400, 200), validation accuracy: 0.9492, accumulated time 1738.2724590301514
+Hidden layer sizes: (300, 400, 300), validation accuracy: 0.946, accumulated time 1757.7493033409119
+Hidden layer sizes: (300, 400, 400), validation accuracy: 0.9524, accumulated time 1783.2582702636719
+Hidden layer sizes: (300, 400, 500), validation accuracy: 0.9524, accumulated time 1806.249801158905
+Hidden layer sizes: (300, 500, 100), validation accuracy: 0.9512, accumulated time 1831.6118977069855
+Hidden layer sizes: (300, 500, 200), validation accuracy: 0.9528, accumulated time 1857.6927964687347
+Hidden layer sizes: (300, 500, 300), validation accuracy: 0.9532, accumulated time 1891.4327902793884
+Hidden layer sizes: (300, 500, 400), validation accuracy: 0.9528, accumulated time 1920.4720530509949
+Hidden layer sizes: (300, 500, 500), validation accuracy: 0.9516, accumulated time 1956.5427606105804
+Hidden layer sizes: (400, 100, 100), validation accuracy: 0.9516, accumulated time 1979.3456053733826
+Hidden layer sizes: (400, 100, 200), validation accuracy: 0.9504, accumulated time 2001.2987716197968
+Hidden layer sizes: (400, 100, 300), validation accuracy: 0.9476, accumulated time 2021.6471843719482
+Hidden layer sizes: (400, 100, 400), validation accuracy: 0.9496, accumulated time 2047.6464974880219
+Hidden layer sizes: (400, 100, 500), validation accuracy: 0.9496, accumulated time 2069.3997116088867
+Hidden layer sizes: (400, 200, 100), validation accuracy: 0.9512, accumulated time 2092.5085577964783
+Hidden layer sizes: (400, 200, 200), validation accuracy: 0.9536, accumulated time 2114.685547351837
+Hidden layer sizes: (400, 200, 300), validation accuracy: 0.95, accumulated time 2135.1953744888306
+Hidden layer sizes: (400, 200, 400), validation accuracy: 0.9508, accumulated time 2156.4070777893066
+Hidden layer sizes: (400, 200, 500), validation accuracy: 0.9528, accumulated time 2177.040899038315
+Hidden layer sizes: (400, 300, 100), validation accuracy: 0.9476, accumulated time 2201.121499300003
+Hidden layer sizes: (400, 300, 200), validation accuracy: 0.9472, accumulated time 2226.47172498703
+Hidden layer sizes: (400, 300, 300), validation accuracy: 0.9516, accumulated time 2253.243243932724
+Hidden layer sizes: (400, 300, 400), validation accuracy: 0.948, accumulated time 2278.541372537613
+Hidden layer sizes: (400, 300, 500), validation accuracy: 0.9376, accumulated time 2304.347907066345
+Hidden layer sizes: (400, 400, 100), validation accuracy: 0.9488, accumulated time 2331.447943687439
+Hidden layer sizes: (400, 400, 200), validation accuracy: 0.9488, accumulated time 2357.387119293213
+Hidden layer sizes: (400, 400, 300), validation accuracy: 0.9516, accumulated time 2391.710316181183
+Hidden layer sizes: (400, 400, 400), validation accuracy: 0.9512, accumulated time 2432.2027785778046
+Hidden layer sizes: (400, 400, 500), validation accuracy: 0.9516, accumulated time 2472.637864589691
+Hidden layer sizes: (400, 500, 100), validation accuracy: 0.9516, accumulated time 2500.0660774707794
+Hidden layer sizes: (400, 500, 200), validation accuracy: 0.946, accumulated time 2526.9461233615875
+Hidden layer sizes: (400, 500, 300), validation accuracy: 0.952, accumulated time 2565.561363697052
+Hidden layer sizes: (400, 500, 400), validation accuracy: 0.9508, accumulated time 2598.7313194274902
+Hidden layer sizes: (400, 500, 500), validation accuracy: 0.938, accumulated time 2627.1841883659363
+Hidden layer sizes: (500, 100, 100), validation accuracy: 0.9484, accumulated time 2652.464607000351
+Hidden layer sizes: (500, 100, 200), validation accuracy: 0.9504, accumulated time 2678.1860229969025
+Hidden layer sizes: (500, 100, 300), validation accuracy: 0.9476, accumulated time 2703.9013645648956
+Hidden layer sizes: (500, 100, 400), validation accuracy: 0.95, accumulated time 2729.3013923168182
+Hidden layer sizes: (500, 100, 500), validation accuracy: 0.9452, accumulated time 2754.417937040329
+Hidden layer sizes: (500, 200, 100), validation accuracy: 0.9472, accumulated time 2782.5173263549805
+Hidden layer sizes: (500, 200, 200), validation accuracy: 0.9484, accumulated time 2808.4594123363495
+Hidden layer sizes: (500, 200, 300), validation accuracy: 0.9484, accumulated time 2834.2499570846558
+Hidden layer sizes: (500, 200, 400), validation accuracy: 0.9504, accumulated time 2858.370355606079
+Hidden layer sizes: (500, 200, 500), validation accuracy: 0.95, accumulated time 2885.2372403144836
+Hidden layer sizes: (500, 300, 100), validation accuracy: 0.9488, accumulated time 2915.698155641556
+Hidden layer sizes: (500, 300, 200), validation accuracy: 0.9548, accumulated time 2940.860718011856
+Hidden layer sizes: (500, 300, 300), validation accuracy: 0.9504, accumulated time 2969.2832460403442
+Hidden layer sizes: (500, 300, 400), validation accuracy: 0.95, accumulated time 2997.699851512909
+Hidden layer sizes: (500, 300, 500), validation accuracy: 0.9484, accumulated time 3028.898418188095
+Hidden layer sizes: (500, 400, 100), validation accuracy: 0.9512, accumulated time 3059.53449010849
+Hidden layer sizes: (500, 400, 200), validation accuracy: 0.95, accumulated time 3090.5884425640106
+Hidden layer sizes: (500, 400, 300), validation accuracy: 0.9544, accumulated time 3120.6804678440094
+Hidden layer sizes: (500, 400, 400), validation accuracy: 0.9496, accumulated time 3155.8793675899506
+Hidden layer sizes: (500, 400, 500), validation accuracy: 0.9512, accumulated time 3194.5544464588165
+Hidden layer sizes: (500, 500, 100), validation accuracy: 0.95, accumulated time 3228.0429096221924
+Hidden layer sizes: (500, 500, 200), validation accuracy: 0.9504, accumulated time 3260.5955555438995
+Hidden layer sizes: (500, 500, 300), validation accuracy: 0.9484, accumulated time 3295.2169823646545
+Hidden layer sizes: (500, 500, 400), validation accuracy: 0.9544, accumulated time 3332.8872594833374
+Hidden layer sizes: (500, 500, 500), validation accuracy: 0.9484, accumulated time 3379.9309594631195
+Hidden layer sizes: (100, 100, 100, 100), validation accuracy: 0.9428, accumulated time 3387.899649143219
+Hidden layer sizes: (100, 100, 100, 200), validation accuracy: 0.938, accumulated time 3397.7762365341187
+Hidden layer sizes: (100, 100, 100, 300), validation accuracy: 0.942, accumulated time 3406.4620082378387
+Hidden layer sizes: (100, 100, 100, 400), validation accuracy: 0.94, accumulated time 3415.9785592556
+Hidden layer sizes: (100, 100, 100, 500), validation accuracy: 0.9416, accumulated time 3426.198228120804
+Hidden layer sizes: (100, 100, 200, 100), validation accuracy: 0.9404, accumulated time 3434.659600496292
+Hidden layer sizes: (100, 100, 200, 200), validation accuracy: 0.9464, accumulated time 3444.4125185012817
+Hidden layer sizes: (100, 100, 200, 300), validation accuracy: 0.9388, accumulated time 3453.32319688797
+Hidden layer sizes: (100, 100, 200, 400), validation accuracy: 0.9284, accumulated time 3460.560354232788
+Hidden layer sizes: (100, 100, 200, 500), validation accuracy: 0.9444, accumulated time 3471.5455045700073
+Hidden layer sizes: (100, 100, 300, 100), validation accuracy: 0.9404, accumulated time 3480.0402960777283
+Hidden layer sizes: (100, 100, 300, 200), validation accuracy: 0.9468, accumulated time 3489.2382073402405
+Hidden layer sizes: (100, 100, 300, 300), validation accuracy: 0.9388, accumulated time 3498.847509622574
+Hidden layer sizes: (100, 100, 300, 400), validation accuracy: 0.9432, accumulated time 3510.628005027771
+Hidden layer sizes: (100, 100, 300, 500), validation accuracy: 0.9472, accumulated time 3526.487723350525
+Hidden layer sizes: (100, 100, 400, 100), validation accuracy: 0.946, accumulated time 3535.5076010227203
+Hidden layer sizes: (100, 100, 400, 200), validation accuracy: 0.9492, accumulated time 3545.163778066635
+Hidden layer sizes: (100, 100, 400, 300), validation accuracy: 0.944, accumulated time 3557.824428796768
+Hidden layer sizes: (100, 100, 400, 400), validation accuracy: 0.948, accumulated time 3574.1109306812286
+Hidden layer sizes: (100, 100, 400, 500), validation accuracy: 0.9432, accumulated time 3589.23743891716
+Hidden layer sizes: (100, 100, 500, 100), validation accuracy: 0.946, accumulated time 3599.3045156002045
+Hidden layer sizes: (100, 100, 500, 200), validation accuracy: 0.9472, accumulated time 3609.6912484169006
+Hidden layer sizes: (100, 100, 500, 300), validation accuracy: 0.946, accumulated time 3625.794184923172
+Hidden layer sizes: (100, 100, 500, 400), validation accuracy: 0.946, accumulated time 3642.948007583618
+Hidden layer sizes: (100, 100, 500, 500), validation accuracy: 0.9452, accumulated time 3663.592447280884
+Hidden layer sizes: (100, 200, 100, 100), validation accuracy: 0.9444, accumulated time 3671.7107577323914
+Hidden layer sizes: (100, 200, 100, 200), validation accuracy: 0.942, accumulated time 3679.6979072093964
+Hidden layer sizes: (100, 200, 100, 300), validation accuracy: 0.9436, accumulated time 3689.0967712402344
+Hidden layer sizes: (100, 200, 100, 400), validation accuracy: 0.9428, accumulated time 3698.1635246276855
+Hidden layer sizes: (100, 200, 100, 500), validation accuracy: 0.9432, accumulated time 3707.951350212097
+Hidden layer sizes: (100, 200, 200, 100), validation accuracy: 0.9456, accumulated time 3716.2292301654816
+Hidden layer sizes: (100, 200, 200, 200), validation accuracy: 0.9444, accumulated time 3725.18128991127
+Hidden layer sizes: (100, 200, 200, 300), validation accuracy: 0.9432, accumulated time 3734.33992600441
+Hidden layer sizes: (100, 200, 200, 400), validation accuracy: 0.9468, accumulated time 3744.1407363414764
+Hidden layer sizes: (100, 200, 200, 500), validation accuracy: 0.9472, accumulated time 3754.9374284744263
+Hidden layer sizes: (100, 200, 300, 100), validation accuracy: 0.9412, accumulated time 3763.9483308792114
+Hidden layer sizes: (100, 200, 300, 200), validation accuracy: 0.9452, accumulated time 3773.25643825531
+Hidden layer sizes: (100, 200, 300, 300), validation accuracy: 0.9432, accumulated time 3783.365913629532
+Hidden layer sizes: (100, 200, 300, 400), validation accuracy: 0.9452, accumulated time 3795.68759059906
+Hidden layer sizes: (100, 200, 300, 500), validation accuracy: 0.9444, accumulated time 3811.6194186210632
+Hidden layer sizes: (100, 200, 400, 100), validation accuracy: 0.9496, accumulated time 3821.515461206436
+Hidden layer sizes: (100, 200, 400, 200), validation accuracy: 0.9476, accumulated time 3833.262105703354
+Hidden layer sizes: (100, 200, 400, 300), validation accuracy: 0.946, accumulated time 3846.075838327408
+Hidden layer sizes: (100, 200, 400, 400), validation accuracy: 0.9468, accumulated time 3862.596935272217
+Hidden layer sizes: (100, 200, 400, 500), validation accuracy: 0.95, accumulated time 3885.239909172058
+Hidden layer sizes: (100, 200, 500, 100), validation accuracy: 0.948, accumulated time 3896.3387389183044
+Hidden layer sizes: (100, 200, 500, 200), validation accuracy: 0.944, accumulated time 3908.7096552848816
+Hidden layer sizes: (100, 200, 500, 300), validation accuracy: 0.9448, accumulated time 3926.0188748836517
+Hidden layer sizes: (100, 200, 500, 400), validation accuracy: 0.9444, accumulated time 3943.442279815674
+Hidden layer sizes: (100, 200, 500, 500), validation accuracy: 0.9444, accumulated time 3972.030352830887
+Hidden layer sizes: (100, 300, 100, 100), validation accuracy: 0.94, accumulated time 3981.7024874687195
+Hidden layer sizes: (100, 300, 100, 200), validation accuracy: 0.9432, accumulated time 3991.0903809070587
+Hidden layer sizes: (100, 300, 100, 300), validation accuracy: 0.9488, accumulated time 4001.155464410782
+Hidden layer sizes: (100, 300, 100, 400), validation accuracy: 0.95, accumulated time 4010.706920862198
+Hidden layer sizes: (100, 300, 100, 500), validation accuracy: 0.9416, accumulated time 4021.825188398361
+Hidden layer sizes: (100, 300, 200, 100), validation accuracy: 0.9412, accumulated time 4032.3191249370575
+Hidden layer sizes: (100, 300, 200, 200), validation accuracy: 0.9436, accumulated time 4041.597311973572
+Hidden layer sizes: (100, 300, 200, 300), validation accuracy: 0.9468, accumulated time 4052.029413461685
+Hidden layer sizes: (100, 300, 200, 400), validation accuracy: 0.9472, accumulated time 4062.7836537361145
+Hidden layer sizes: (100, 300, 200, 500), validation accuracy: 0.9524, accumulated time 4075.0847969055176
+Hidden layer sizes: (100, 300, 300, 100), validation accuracy: 0.946, accumulated time 4085.5413403511047
+Hidden layer sizes: (100, 300, 300, 200), validation accuracy: 0.9472, accumulated time 4096.983740568161
+Hidden layer sizes: (100, 300, 300, 300), validation accuracy: 0.9472, accumulated time 4108.2406368255615
+Hidden layer sizes: (100, 300, 300, 400), validation accuracy: 0.9508, accumulated time 4122.044234275818
+Hidden layer sizes: (100, 300, 300, 500), validation accuracy: 0.9404, accumulated time 4137.578737258911
+Hidden layer sizes: (100, 300, 400, 100), validation accuracy: 0.9496, accumulated time 4149.133344888687
+Hidden layer sizes: (100, 300, 400, 200), validation accuracy: 0.9516, accumulated time 4162.245340585709
+Hidden layer sizes: (100, 300, 400, 300), validation accuracy: 0.9448, accumulated time 4174.487112283707
+Hidden layer sizes: (100, 300, 400, 400), validation accuracy: 0.948, accumulated time 4192.787171602249
+Hidden layer sizes: (100, 300, 400, 500), validation accuracy: 0.9492, accumulated time 4214.729003190994
+Hidden layer sizes: (100, 300, 500, 100), validation accuracy: 0.9488, accumulated time 4232.133459329605
+Hidden layer sizes: (100, 300, 500, 200), validation accuracy: 0.9452, accumulated time 4250.460448980331
+Hidden layer sizes: (100, 300, 500, 300), validation accuracy: 0.9476, accumulated time 4272.6824498176575
+Hidden layer sizes: (100, 300, 500, 400), validation accuracy: 0.95, accumulated time 4301.5594182014465
+Hidden layer sizes: (100, 300, 500, 500), validation accuracy: 0.9464, accumulated time 4326.19304895401
+Hidden layer sizes: (100, 400, 100, 100), validation accuracy: 0.9424, accumulated time 4335.947962760925
+Hidden layer sizes: (100, 400, 100, 200), validation accuracy: 0.9472, accumulated time 4345.123627662659
+Hidden layer sizes: (100, 400, 100, 300), validation accuracy: 0.9496, accumulated time 4354.923419952393
+Hidden layer sizes: (100, 400, 100, 400), validation accuracy: 0.9476, accumulated time 4364.97952747345
+Hidden layer sizes: (100, 400, 100, 500), validation accuracy: 0.9472, accumulated time 4377.575841188431
+Hidden layer sizes: (100, 400, 200, 100), validation accuracy: 0.9476, accumulated time 4387.169186592102
+Hidden layer sizes: (100, 400, 200, 200), validation accuracy: 0.95, accumulated time 4397.596301317215
+Hidden layer sizes: (100, 400, 200, 300), validation accuracy: 0.9372, accumulated time 4405.950958490372
+Hidden layer sizes: (100, 400, 200, 400), validation accuracy: 0.9468, accumulated time 4417.736441373825
+Hidden layer sizes: (100, 400, 200, 500), validation accuracy: 0.9396, accumulated time 4427.445494651794
+Hidden layer sizes: (100, 400, 300, 100), validation accuracy: 0.9448, accumulated time 4438.859969139099
+Hidden layer sizes: (100, 400, 300, 200), validation accuracy: 0.9444, accumulated time 4449.134493589401
+Hidden layer sizes: (100, 400, 300, 300), validation accuracy: 0.9512, accumulated time 4462.87873673439
+Hidden layer sizes: (100, 400, 300, 400), validation accuracy: 0.9492, accumulated time 4476.415998458862
+Hidden layer sizes: (100, 400, 300, 500), validation accuracy: 0.9456, accumulated time 4493.540176868439
+Hidden layer sizes: (100, 400, 400, 100), validation accuracy: 0.9516, accumulated time 4510.054014444351
+Hidden layer sizes: (100, 400, 400, 200), validation accuracy: 0.9468, accumulated time 4527.237542390823
+Hidden layer sizes: (100, 400, 400, 300), validation accuracy: 0.9512, accumulated time 4545.991406440735
+Hidden layer sizes: (100, 400, 400, 400), validation accuracy: 0.9484, accumulated time 4569.191440343857
+Hidden layer sizes: (100, 400, 400, 500), validation accuracy: 0.95, accumulated time 4596.339838504791
+Hidden layer sizes: (100, 400, 500, 100), validation accuracy: 0.9428, accumulated time 4611.43447136879
+Hidden layer sizes: (100, 400, 500, 200), validation accuracy: 0.9508, accumulated time 4633.672508239746
+Hidden layer sizes: (100, 400, 500, 300), validation accuracy: 0.9472, accumulated time 4655.570946216583
+Hidden layer sizes: (100, 400, 500, 400), validation accuracy: 0.9476, accumulated time 4682.0111348629
+Hidden layer sizes: (100, 400, 500, 500), validation accuracy: 0.9484, accumulated time 4708.921872615814
+Hidden layer sizes: (100, 500, 100, 100), validation accuracy: 0.944, accumulated time 4718.304033756256
+Hidden layer sizes: (100, 500, 100, 200), validation accuracy: 0.9472, accumulated time 4728.052478551865
+Hidden layer sizes: (100, 500, 100, 300), validation accuracy: 0.9428, accumulated time 4738.168424844742
+Hidden layer sizes: (100, 500, 100, 400), validation accuracy: 0.9252, accumulated time 4747.993341445923
+Hidden layer sizes: (100, 500, 100, 500), validation accuracy: 0.9436, accumulated time 4758.082360506058
+Hidden layer sizes: (100, 500, 200, 100), validation accuracy: 0.9468, accumulated time 4768.795221328735
+Hidden layer sizes: (100, 500, 200, 200), validation accuracy: 0.9444, accumulated time 4780.172208786011
+Hidden layer sizes: (100, 500, 200, 300), validation accuracy: 0.9456, accumulated time 4792.036498069763
+Hidden layer sizes: (100, 500, 200, 400), validation accuracy: 0.9404, accumulated time 4803.400617837906
+Hidden layer sizes: (100, 500, 200, 500), validation accuracy: 0.944, accumulated time 4817.591666698456
+Hidden layer sizes: (100, 500, 300, 100), validation accuracy: 0.95, accumulated time 4832.645425081253
+Hidden layer sizes: (100, 500, 300, 200), validation accuracy: 0.9476, accumulated time 4848.048251390457
+Hidden layer sizes: (100, 500, 300, 300), validation accuracy: 0.952, accumulated time 4864.818902015686
+Hidden layer sizes: (100, 500, 300, 400), validation accuracy: 0.946, accumulated time 4884.650775671005
+Hidden layer sizes: (100, 500, 300, 500), validation accuracy: 0.95, accumulated time 4903.909290790558
+Hidden layer sizes: (100, 500, 400, 100), validation accuracy: 0.9484, accumulated time 4921.382072687149
+Hidden layer sizes: (100, 500, 400, 200), validation accuracy: 0.9512, accumulated time 4947.701670885086
+Hidden layer sizes: (100, 500, 400, 300), validation accuracy: 0.9464, accumulated time 4973.0106320381165
+Hidden layer sizes: (100, 500, 400, 400), validation accuracy: 0.9456, accumulated time 4992.231738090515
+Hidden layer sizes: (100, 500, 400, 500), validation accuracy: 0.9436, accumulated time 5014.663258075714
+Hidden layer sizes: (100, 500, 500, 100), validation accuracy: 0.9468, accumulated time 5033.191016674042
+Hidden layer sizes: (100, 500, 500, 200), validation accuracy: 0.952, accumulated time 5059.461777925491
+Hidden layer sizes: (100, 500, 500, 300), validation accuracy: 0.9468, accumulated time 5086.610683441162
+Hidden layer sizes: (100, 500, 500, 400), validation accuracy: 0.9512, accumulated time 5111.346162080765
+Hidden layer sizes: (100, 500, 500, 500), validation accuracy: 0.9496, accumulated time 5151.700244903564
+Hidden layer sizes: (200, 100, 100, 100), validation accuracy: 0.9424, accumulated time 5164.427209615707
+Hidden layer sizes: (200, 100, 100, 200), validation accuracy: 0.9488, accumulated time 5177.481299161911
+Hidden layer sizes: (200, 100, 100, 300), validation accuracy: 0.9248, accumulated time 5188.1008994579315
+Hidden layer sizes: (200, 100, 100, 400), validation accuracy: 0.9524, accumulated time 5202.002722263336
+Hidden layer sizes: (200, 100, 100, 500), validation accuracy: 0.946, accumulated time 5214.845377922058
+Hidden layer sizes: (200, 100, 200, 100), validation accuracy: 0.9428, accumulated time 5228.259504318237
+Hidden layer sizes: (200, 100, 200, 200), validation accuracy: 0.9468, accumulated time 5241.444244861603
+Hidden layer sizes: (200, 100, 200, 300), validation accuracy: 0.9476, accumulated time 5255.442809104919
+Hidden layer sizes: (200, 100, 200, 400), validation accuracy: 0.944, accumulated time 5268.741245269775
+Hidden layer sizes: (200, 100, 200, 500), validation accuracy: 0.9516, accumulated time 5282.942269325256
+Hidden layer sizes: (200, 100, 300, 100), validation accuracy: 0.9504, accumulated time 5295.295233488083
+Hidden layer sizes: (200, 100, 300, 200), validation accuracy: 0.9432, accumulated time 5310.52450633049
+Hidden layer sizes: (200, 100, 300, 300), validation accuracy: 0.9448, accumulated time 5325.512424230576
+Hidden layer sizes: (200, 100, 300, 400), validation accuracy: 0.9504, accumulated time 5341.860704421997
+Hidden layer sizes: (200, 100, 300, 500), validation accuracy: 0.9508, accumulated time 5360.170754909515
+Hidden layer sizes: (200, 100, 400, 100), validation accuracy: 0.9512, accumulated time 5374.802639722824
+Hidden layer sizes: (200, 100, 400, 200), validation accuracy: 0.948, accumulated time 5388.500757217407
+Hidden layer sizes: (200, 100, 400, 300), validation accuracy: 0.946, accumulated time 5404.168382883072
+Hidden layer sizes: (200, 100, 400, 400), validation accuracy: 0.9488, accumulated time 5424.777269124985
+Hidden layer sizes: (200, 100, 400, 500), validation accuracy: 0.9464, accumulated time 5445.375906944275
+Hidden layer sizes: (200, 100, 500, 100), validation accuracy: 0.942, accumulated time 5460.014790296555
+Hidden layer sizes: (200, 100, 500, 200), validation accuracy: 0.9464, accumulated time 5476.879689455032
+Hidden layer sizes: (200, 100, 500, 300), validation accuracy: 0.9488, accumulated time 5496.286790132523
+Hidden layer sizes: (200, 100, 500, 400), validation accuracy: 0.9492, accumulated time 5518.673921585083
+Hidden layer sizes: (200, 100, 500, 500), validation accuracy: 0.9512, accumulated time 5543.259190320969
+Hidden layer sizes: (200, 200, 100, 100), validation accuracy: 0.9464, accumulated time 5556.487812995911
+Hidden layer sizes: (200, 200, 100, 200), validation accuracy: 0.9484, accumulated time 5569.701476573944
+Hidden layer sizes: (200, 200, 100, 300), validation accuracy: 0.9452, accumulated time 5584.038642644882
+Hidden layer sizes: (200, 200, 100, 400), validation accuracy: 0.9484, accumulated time 5599.5846972465515
+Hidden layer sizes: (200, 200, 100, 500), validation accuracy: 0.944, accumulated time 5613.880487680435
+Hidden layer sizes: (200, 200, 200, 100), validation accuracy: 0.944, accumulated time 5627.805250167847
+Hidden layer sizes: (200, 200, 200, 200), validation accuracy: 0.9456, accumulated time 5641.744970321655
+Hidden layer sizes: (200, 200, 200, 300), validation accuracy: 0.9508, accumulated time 5656.7209379673
+Hidden layer sizes: (200, 200, 200, 400), validation accuracy: 0.9496, accumulated time 5670.8561363220215
+Hidden layer sizes: (200, 200, 200, 500), validation accuracy: 0.9472, accumulated time 5687.704083681107
+Hidden layer sizes: (200, 200, 300, 100), validation accuracy: 0.9472, accumulated time 5702.025896787643
+Hidden layer sizes: (200, 200, 300, 200), validation accuracy: 0.9456, accumulated time 5718.559022426605
+Hidden layer sizes: (200, 200, 300, 300), validation accuracy: 0.9424, accumulated time 5733.518018007278
+Hidden layer sizes: (200, 200, 300, 400), validation accuracy: 0.946, accumulated time 5754.6977553367615
+Hidden layer sizes: (200, 200, 300, 500), validation accuracy: 0.9456, accumulated time 5774.768873929977
+Hidden layer sizes: (200, 200, 400, 100), validation accuracy: 0.9472, accumulated time 5788.774928331375
+Hidden layer sizes: (200, 200, 400, 200), validation accuracy: 0.946, accumulated time 5805.451976060867
+Hidden layer sizes: (200, 200, 400, 300), validation accuracy: 0.9516, accumulated time 5826.251374959946
+Hidden layer sizes: (200, 200, 400, 400), validation accuracy: 0.9536, accumulated time 5850.012811422348
+Hidden layer sizes: (200, 200, 400, 500), validation accuracy: 0.9288, accumulated time 5870.161435842514
+Hidden layer sizes: (200, 200, 500, 100), validation accuracy: 0.9448, accumulated time 5885.901342868805
+Hidden layer sizes: (200, 200, 500, 200), validation accuracy: 0.9432, accumulated time 5901.830743789673
+Hidden layer sizes: (200, 200, 500, 300), validation accuracy: 0.95, accumulated time 5924.266434669495
+Hidden layer sizes: (200, 200, 500, 400), validation accuracy: 0.9276, accumulated time 5941.036381006241
+Hidden layer sizes: (200, 200, 500, 500), validation accuracy: 0.928, accumulated time 5962.599715471268
+Hidden layer sizes: (200, 300, 100, 100), validation accuracy: 0.9496, accumulated time 5977.485415697098
+Hidden layer sizes: (200, 300, 100, 200), validation accuracy: 0.9516, accumulated time 5991.678966999054
+Hidden layer sizes: (200, 300, 100, 300), validation accuracy: 0.9476, accumulated time 6006.269473791122
+Hidden layer sizes: (200, 300, 100, 400), validation accuracy: 0.94, accumulated time 6021.464152574539
+Hidden layer sizes: (200, 300, 100, 500), validation accuracy: 0.954, accumulated time 6036.37926530838
+Hidden layer sizes: (200, 300, 200, 100), validation accuracy: 0.9472, accumulated time 6051.441493988037
+Hidden layer sizes: (200, 300, 200, 200), validation accuracy: 0.95, accumulated time 6066.220969676971
+Hidden layer sizes: (200, 300, 200, 300), validation accuracy: 0.9496, accumulated time 6083.197138547897
+Hidden layer sizes: (200, 300, 200, 400), validation accuracy: 0.95, accumulated time 6099.002381324768
+Hidden layer sizes: (200, 300, 200, 500), validation accuracy: 0.9496, accumulated time 6115.912684202194
+Hidden layer sizes: (200, 300, 300, 100), validation accuracy: 0.9472, accumulated time 6132.005683660507
+Hidden layer sizes: (200, 300, 300, 200), validation accuracy: 0.95, accumulated time 6150.388035535812
+Hidden layer sizes: (200, 300, 300, 300), validation accuracy: 0.9504, accumulated time 6168.633244037628
+Hidden layer sizes: (200, 300, 300, 400), validation accuracy: 0.9456, accumulated time 6186.48183131218
+Hidden layer sizes: (200, 300, 300, 500), validation accuracy: 0.9468, accumulated time 6207.874131202698
+Hidden layer sizes: (200, 300, 400, 100), validation accuracy: 0.9516, accumulated time 6225.584784984589
+Hidden layer sizes: (200, 300, 400, 200), validation accuracy: 0.9508, accumulated time 6244.895509719849
+Hidden layer sizes: (200, 300, 400, 300), validation accuracy: 0.9536, accumulated time 6264.891035079956
+Hidden layer sizes: (200, 300, 400, 400), validation accuracy: 0.9516, accumulated time 6287.6711230278015
+Hidden layer sizes: (200, 300, 400, 500), validation accuracy: 0.9332, accumulated time 6307.27819943428
+Hidden layer sizes: (200, 300, 500, 100), validation accuracy: 0.9508, accumulated time 6327.688032865524
+Hidden layer sizes: (200, 300, 500, 200), validation accuracy: 0.952, accumulated time 6350.971766233444
+Hidden layer sizes: (200, 300, 500, 300), validation accuracy: 0.952, accumulated time 6379.536885023117
+Hidden layer sizes: (200, 300, 500, 400), validation accuracy: 0.954, accumulated time 6416.92190694809
+Hidden layer sizes: (200, 300, 500, 500), validation accuracy: 0.9536, accumulated time 6451.825564861298
+Hidden layer sizes: (200, 400, 100, 100), validation accuracy: 0.9516, accumulated time 6469.228044748306
+Hidden layer sizes: (200, 400, 100, 200), validation accuracy: 0.9444, accumulated time 6485.576348543167
+Hidden layer sizes: (200, 400, 100, 300), validation accuracy: 0.946, accumulated time 6501.192193984985
+Hidden layer sizes: (200, 400, 100, 400), validation accuracy: 0.9492, accumulated time 6518.632035493851
+Hidden layer sizes: (200, 400, 100, 500), validation accuracy: 0.95, accumulated time 6536.045974254608
+Hidden layer sizes: (200, 400, 200, 100), validation accuracy: 0.9448, accumulated time 6548.651264667511
+Hidden layer sizes: (200, 400, 200, 200), validation accuracy: 0.948, accumulated time 6564.733768701553
+Hidden layer sizes: (200, 400, 200, 300), validation accuracy: 0.9436, accumulated time 6578.214226007462
+Hidden layer sizes: (200, 400, 200, 400), validation accuracy: 0.9532, accumulated time 6600.326600313187
+Hidden layer sizes: (200, 400, 200, 500), validation accuracy: 0.9492, accumulated time 6617.367071628571
+Hidden layer sizes: (200, 400, 300, 100), validation accuracy: 0.9488, accumulated time 6633.416313171387
+Hidden layer sizes: (200, 400, 300, 200), validation accuracy: 0.9464, accumulated time 6648.721382856369
+Hidden layer sizes: (200, 400, 300, 300), validation accuracy: 0.9516, accumulated time 6666.493854999542
+Hidden layer sizes: (200, 400, 300, 400), validation accuracy: 0.9472, accumulated time 6687.393492460251
+Hidden layer sizes: (200, 400, 300, 500), validation accuracy: 0.9496, accumulated time 6711.866557121277
+Hidden layer sizes: (200, 400, 400, 100), validation accuracy: 0.9444, accumulated time 6733.09481048584
+Hidden layer sizes: (200, 400, 400, 200), validation accuracy: 0.9532, accumulated time 6752.8634514808655
+Hidden layer sizes: (200, 400, 400, 300), validation accuracy: 0.9492, accumulated time 6778.301446676254
+Hidden layer sizes: (200, 400, 400, 400), validation accuracy: 0.9516, accumulated time 6809.743868589401
+Hidden layer sizes: (200, 400, 400, 500), validation accuracy: 0.9536, accumulated time 6847.767690658569
+Hidden layer sizes: (200, 400, 500, 100), validation accuracy: 0.9496, accumulated time 6875.493544101715
+Hidden layer sizes: (200, 400, 500, 200), validation accuracy: 0.9492, accumulated time 6903.641289234161
+Hidden layer sizes: (200, 400, 500, 300), validation accuracy: 0.9452, accumulated time 6928.047296285629
+Hidden layer sizes: (200, 400, 500, 400), validation accuracy: 0.9492, accumulated time 6957.806537866592
+Hidden layer sizes: (200, 400, 500, 500), validation accuracy: 0.9352, accumulated time 6992.1919775009155
+Hidden layer sizes: (200, 500, 100, 100), validation accuracy: 0.9432, accumulated time 7008.258012533188
+Hidden layer sizes: (200, 500, 100, 200), validation accuracy: 0.9508, accumulated time 7027.231273174286
+Hidden layer sizes: (200, 500, 100, 300), validation accuracy: 0.9424, accumulated time 7041.9199912548065
+Hidden layer sizes: (200, 500, 100, 400), validation accuracy: 0.948, accumulated time 7058.692139148712
+Hidden layer sizes: (200, 500, 100, 500), validation accuracy: 0.95, accumulated time 7078.545513153076
+Hidden layer sizes: (200, 500, 200, 100), validation accuracy: 0.952, accumulated time 7093.520466804504
+Hidden layer sizes: (200, 500, 200, 200), validation accuracy: 0.948, accumulated time 7108.066077709198
+Hidden layer sizes: (200, 500, 200, 300), validation accuracy: 0.9508, accumulated time 7124.617812633514
+Hidden layer sizes: (200, 500, 200, 400), validation accuracy: 0.9476, accumulated time 7139.693496465683
+Hidden layer sizes: (200, 500, 200, 500), validation accuracy: 0.9476, accumulated time 7156.737443447113
+Hidden layer sizes: (200, 500, 300, 100), validation accuracy: 0.9476, accumulated time 7176.853159427643
+Hidden layer sizes: (200, 500, 300, 200), validation accuracy: 0.9492, accumulated time 7198.522727012634
+Hidden layer sizes: (200, 500, 300, 300), validation accuracy: 0.9536, accumulated time 7224.23736000061
+Hidden layer sizes: (200, 500, 300, 400), validation accuracy: 0.9516, accumulated time 7242.315343141556
+Hidden layer sizes: (200, 500, 300, 500), validation accuracy: 0.9544, accumulated time 7272.299732923508
+Hidden layer sizes: (200, 500, 400, 100), validation accuracy: 0.9492, accumulated time 7294.385669469833
+Hidden layer sizes: (200, 500, 400, 200), validation accuracy: 0.9544, accumulated time 7319.842315912247
+Hidden layer sizes: (200, 500, 400, 300), validation accuracy: 0.952, accumulated time 7342.121752500534
+Hidden layer sizes: (200, 500, 400, 400), validation accuracy: 0.9536, accumulated time 7373.109934329987
+Hidden layer sizes: (200, 500, 400, 500), validation accuracy: 0.9492, accumulated time 7408.911719083786
+Hidden layer sizes: (200, 500, 500, 100), validation accuracy: 0.9552, accumulated time 7434.275887727737
+Hidden layer sizes: (200, 500, 500, 200), validation accuracy: 0.9516, accumulated time 7468.457476615906
+Hidden layer sizes: (200, 500, 500, 300), validation accuracy: 0.9492, accumulated time 7503.884850263596
+Hidden layer sizes: (200, 500, 500, 400), validation accuracy: 0.952, accumulated time 7539.6258380413055
+Hidden layer sizes: (200, 500, 500, 500), validation accuracy: 0.9544, accumulated time 7585.345160961151
+Hidden layer sizes: (300, 100, 100, 100), validation accuracy: 0.9464, accumulated time 7606.7957446575165
+Hidden layer sizes: (300, 100, 100, 200), validation accuracy: 0.9456, accumulated time 7625.986009120941
+Hidden layer sizes: (300, 100, 100, 300), validation accuracy: 0.9444, accumulated time 7647.112853050232
+Hidden layer sizes: (300, 100, 100, 400), validation accuracy: 0.9476, accumulated time 7667.7171103954315
+Hidden layer sizes: (300, 100, 100, 500), validation accuracy: 0.9436, accumulated time 7690.377630233765
+Hidden layer sizes: (300, 100, 200, 100), validation accuracy: 0.9468, accumulated time 7710.422119617462
+Hidden layer sizes: (300, 100, 200, 200), validation accuracy: 0.9476, accumulated time 7729.321770429611
+Hidden layer sizes: (300, 100, 200, 300), validation accuracy: 0.9456, accumulated time 7750.465721845627
+Hidden layer sizes: (300, 100, 200, 400), validation accuracy: 0.9468, accumulated time 7770.605620622635
+Hidden layer sizes: (300, 100, 200, 500), validation accuracy: 0.9504, accumulated time 7789.864334106445
+Hidden layer sizes: (300, 100, 300, 100), validation accuracy: 0.9484, accumulated time 7809.836337804794
+Hidden layer sizes: (300, 100, 300, 200), validation accuracy: 0.946, accumulated time 7830.319053649902
+Hidden layer sizes: (300, 100, 300, 300), validation accuracy: 0.9492, accumulated time 7855.514264822006
+Hidden layer sizes: (300, 100, 300, 400), validation accuracy: 0.9464, accumulated time 7882.107387304306
+Hidden layer sizes: (300, 100, 300, 500), validation accuracy: 0.948, accumulated time 7906.276940822601
+Hidden layer sizes: (300, 100, 400, 100), validation accuracy: 0.9492, accumulated time 7925.869534730911
+Hidden layer sizes: (300, 100, 400, 200), validation accuracy: 0.9496, accumulated time 7944.030666589737
+Hidden layer sizes: (300, 100, 400, 300), validation accuracy: 0.9444, accumulated time 7958.449799776077
+Hidden layer sizes: (300, 100, 400, 400), validation accuracy: 0.9484, accumulated time 7983.999805688858
+Hidden layer sizes: (300, 100, 400, 500), validation accuracy: 0.95, accumulated time 8010.461579799652
+Hidden layer sizes: (300, 100, 500, 100), validation accuracy: 0.936, accumulated time 8027.236490488052
+Hidden layer sizes: (300, 100, 500, 200), validation accuracy: 0.95, accumulated time 8051.52484703064
+Hidden layer sizes: (300, 100, 500, 300), validation accuracy: 0.948, accumulated time 8074.714653015137
+Hidden layer sizes: (300, 100, 500, 400), validation accuracy: 0.9472, accumulated time 8098.754963159561
+Hidden layer sizes: (300, 100, 500, 500), validation accuracy: 0.9468, accumulated time 8126.67564702034
+Hidden layer sizes: (300, 200, 100, 100), validation accuracy: 0.9452, accumulated time 8150.4935829639435
+Hidden layer sizes: (300, 200, 100, 200), validation accuracy: 0.946, accumulated time 8170.797430276871
+Hidden layer sizes: (300, 200, 100, 300), validation accuracy: 0.9504, accumulated time 8189.0845246315
+Hidden layer sizes: (300, 200, 100, 400), validation accuracy: 0.9452, accumulated time 8206.472628831863
+Hidden layer sizes: (300, 200, 100, 500), validation accuracy: 0.9512, accumulated time 8227.255784988403
+Hidden layer sizes: (300, 200, 200, 100), validation accuracy: 0.9488, accumulated time 8246.924368619919
+Hidden layer sizes: (300, 200, 200, 200), validation accuracy: 0.9452, accumulated time 8267.97201347351
+Hidden layer sizes: (300, 200, 200, 300), validation accuracy: 0.9516, accumulated time 8286.79751253128
+Hidden layer sizes: (300, 200, 200, 400), validation accuracy: 0.9492, accumulated time 8306.560659885406
+Hidden layer sizes: (300, 200, 200, 500), validation accuracy: 0.9528, accumulated time 8328.51344370842
+Hidden layer sizes: (300, 200, 300, 100), validation accuracy: 0.9468, accumulated time 8343.526803255081
+Hidden layer sizes: (300, 200, 300, 200), validation accuracy: 0.9488, accumulated time 8362.459594726562
+Hidden layer sizes: (300, 200, 300, 300), validation accuracy: 0.9508, accumulated time 8383.61654305458
+Hidden layer sizes: (300, 200, 300, 400), validation accuracy: 0.9476, accumulated time 8406.518803834915
+Hidden layer sizes: (300, 200, 300, 500), validation accuracy: 0.9544, accumulated time 8430.996344804764
+Hidden layer sizes: (300, 200, 400, 100), validation accuracy: 0.9516, accumulated time 8449.028629779816
+Hidden layer sizes: (300, 200, 400, 200), validation accuracy: 0.9536, accumulated time 8468.5643825531
+Hidden layer sizes: (300, 200, 400, 300), validation accuracy: 0.9524, accumulated time 8488.058723926544
+Hidden layer sizes: (300, 200, 400, 400), validation accuracy: 0.9384, accumulated time 8514.49588394165
+Hidden layer sizes: (300, 200, 400, 500), validation accuracy: 0.9492, accumulated time 8552.152562618256
+Hidden layer sizes: (300, 200, 500, 100), validation accuracy: 0.9496, accumulated time 8571.130885362625
+Hidden layer sizes: (300, 200, 500, 200), validation accuracy: 0.952, accumulated time 8590.839606285095
+Hidden layer sizes: (300, 200, 500, 300), validation accuracy: 0.9428, accumulated time 8617.628525972366
+Hidden layer sizes: (300, 200, 500, 400), validation accuracy: 0.9524, accumulated time 8648.404241323471
+Hidden layer sizes: (300, 200, 500, 500), validation accuracy: 0.948, accumulated time 8676.973838806152
+Hidden layer sizes: (300, 300, 100, 100), validation accuracy: 0.946, accumulated time 8694.617707252502
+Hidden layer sizes: (300, 300, 100, 200), validation accuracy: 0.9476, accumulated time 8713.530148983002
+Hidden layer sizes: (300, 300, 100, 300), validation accuracy: 0.9352, accumulated time 8728.967891454697
+Hidden layer sizes: (300, 300, 100, 400), validation accuracy: 0.9484, accumulated time 8752.40527510643
+Hidden layer sizes: (300, 300, 100, 500), validation accuracy: 0.9496, accumulated time 8773.73022389412
+Hidden layer sizes: (300, 300, 200, 100), validation accuracy: 0.9508, accumulated time 8795.284342765808
+Hidden layer sizes: (300, 300, 200, 200), validation accuracy: 0.9492, accumulated time 8819.272369623184
+Hidden layer sizes: (300, 300, 200, 300), validation accuracy: 0.9448, accumulated time 8836.832476139069
+Hidden layer sizes: (300, 300, 200, 400), validation accuracy: 0.956, accumulated time 8870.012823343277
+Hidden layer sizes: (300, 300, 200, 500), validation accuracy: 0.8928, accumulated time 8891.035199642181
+Hidden layer sizes: (300, 300, 300, 100), validation accuracy: 0.9504, accumulated time 8912.836416959763
+Hidden layer sizes: (300, 300, 300, 200), validation accuracy: 0.9512, accumulated time 8932.68645143509
+Hidden layer sizes: (300, 300, 300, 300), validation accuracy: 0.95, accumulated time 8959.40886926651
+Hidden layer sizes: (300, 300, 300, 400), validation accuracy: 0.9512, accumulated time 8990.095249176025
+Hidden layer sizes: (300, 300, 300, 500), validation accuracy: 0.9484, accumulated time 9015.527065038681
+Hidden layer sizes: (300, 300, 400, 100), validation accuracy: 0.954, accumulated time 9036.555242538452
+Hidden layer sizes: (300, 300, 400, 200), validation accuracy: 0.9512, accumulated time 9061.510176420212
+Hidden layer sizes: (300, 300, 400, 300), validation accuracy: 0.9504, accumulated time 9085.480989933014
+Hidden layer sizes: (300, 300, 400, 400), validation accuracy: 0.9548, accumulated time 9120.802328824997
+Hidden layer sizes: (300, 300, 400, 500), validation accuracy: 0.9488, accumulated time 9153.459443092346
+Hidden layer sizes: (300, 300, 500, 100), validation accuracy: 0.9536, accumulated time 9182.12321305275
+Hidden layer sizes: (300, 300, 500, 200), validation accuracy: 0.9548, accumulated time 9207.076098442078
+Hidden layer sizes: (300, 300, 500, 300), validation accuracy: 0.9556, accumulated time 9246.530266046524
+Hidden layer sizes: (300, 300, 500, 400), validation accuracy: 0.9456, accumulated time 9278.716364145279
+Hidden layer sizes: (300, 300, 500, 500), validation accuracy: 0.942, accumulated time 9311.038208007812
+Hidden layer sizes: (300, 400, 100, 100), validation accuracy: 0.9476, accumulated time 9331.789181232452
+Hidden layer sizes: (300, 400, 100, 200), validation accuracy: 0.9476, accumulated time 9351.466194152832
+Hidden layer sizes: (300, 400, 100, 300), validation accuracy: 0.9476, accumulated time 9372.676208257675
+Hidden layer sizes: (300, 400, 100, 400), validation accuracy: 0.9472, accumulated time 9396.694791316986
+Hidden layer sizes: (300, 400, 100, 500), validation accuracy: 0.9512, accumulated time 9430.162823677063
+Hidden layer sizes: (300, 400, 200, 100), validation accuracy: 0.9452, accumulated time 9450.810990571976
+Hidden layer sizes: (300, 400, 200, 200), validation accuracy: 0.9516, accumulated time 9479.116287231445
+Hidden layer sizes: (300, 400, 200, 300), validation accuracy: 0.9288, accumulated time 9499.377861499786
+Hidden layer sizes: (300, 400, 200, 400), validation accuracy: 0.9524, accumulated time 9527.186008930206
+Hidden layer sizes: (300, 400, 200, 500), validation accuracy: 0.952, accumulated time 9567.901886224747
+Hidden layer sizes: (300, 400, 300, 100), validation accuracy: 0.9464, accumulated time 9595.663240671158
+Hidden layer sizes: (300, 400, 300, 200), validation accuracy: 0.936, accumulated time 9625.506079673767
+Hidden layer sizes: (300, 400, 300, 300), validation accuracy: 0.9528, accumulated time 9655.092963218689
+Hidden layer sizes: (300, 400, 300, 400), validation accuracy: 0.924, accumulated time 9691.40671300888
+Hidden layer sizes: (300, 400, 300, 500), validation accuracy: 0.9404, accumulated time 9723.17015171051
+Hidden layer sizes: (300, 400, 400, 100), validation accuracy: 0.9496, accumulated time 9754.625995397568
+Hidden layer sizes: (300, 400, 400, 200), validation accuracy: 0.952, accumulated time 9787.012739181519
+Hidden layer sizes: (300, 400, 400, 300), validation accuracy: 0.9524, accumulated time 9823.607606649399
+Hidden layer sizes: (300, 400, 400, 400), validation accuracy: 0.9552, accumulated time 9867.7888610363
+Hidden layer sizes: (300, 400, 400, 500), validation accuracy: 0.9428, accumulated time 9913.371387958527
+Hidden layer sizes: (300, 400, 500, 100), validation accuracy: 0.9484, accumulated time 9950.035526514053
+Hidden layer sizes: (300, 400, 500, 200), validation accuracy: 0.9504, accumulated time 9984.667726278305
+Hidden layer sizes: (300, 400, 500, 300), validation accuracy: 0.956, accumulated time 10039.75391292572
+Hidden layer sizes: (300, 400, 500, 400), validation accuracy: 0.9564, accumulated time 10104.68785405159
+Hidden layer sizes: (300, 400, 500, 500), validation accuracy: 0.9524, accumulated time 10158.85094833374
+Hidden layer sizes: (300, 500, 100, 100), validation accuracy: 0.9488, accumulated time 10190.297833681107
+Hidden layer sizes: (300, 500, 100, 200), validation accuracy: 0.954, accumulated time 10225.227845430374
+Hidden layer sizes: (300, 500, 100, 300), validation accuracy: 0.948, accumulated time 10254.844822883606
+Hidden layer sizes: (300, 500, 100, 400), validation accuracy: 0.9528, accumulated time 10289.083796262741
+Hidden layer sizes: (300, 500, 100, 500), validation accuracy: 0.9524, accumulated time 10319.320409059525
+Hidden layer sizes: (300, 500, 200, 100), validation accuracy: 0.952, accumulated time 10349.728327512741
+Hidden layer sizes: (300, 500, 200, 200), validation accuracy: 0.9516, accumulated time 10379.050917863846
+Hidden layer sizes: (300, 500, 200, 300), validation accuracy: 0.95, accumulated time 10408.020419597626
+Hidden layer sizes: (300, 500, 200, 400), validation accuracy: 0.9416, accumulated time 10437.317363977432
+Hidden layer sizes: (300, 500, 200, 500), validation accuracy: 0.9528, accumulated time 10470.124502182007
+Hidden layer sizes: (300, 500, 300, 100), validation accuracy: 0.954, accumulated time 10503.712764263153
+Hidden layer sizes: (300, 500, 300, 200), validation accuracy: 0.9528, accumulated time 10548.602409362793
+Hidden layer sizes: (300, 500, 300, 300), validation accuracy: 0.956, accumulated time 10594.633591651917
+Hidden layer sizes: (300, 500, 300, 400), validation accuracy: 0.9536, accumulated time 10632.011492967606
+Hidden layer sizes: (300, 500, 300, 500), validation accuracy: 0.9336, accumulated time 10670.840865850449
+Hidden layer sizes: (300, 500, 400, 100), validation accuracy: 0.95, accumulated time 10707.582631349564
+Hidden layer sizes: (300, 500, 400, 200), validation accuracy: 0.9544, accumulated time 10761.051332950592
+Hidden layer sizes: (300, 500, 400, 300), validation accuracy: 0.9528, accumulated time 10812.890698432922
+Hidden layer sizes: (300, 500, 400, 400), validation accuracy: 0.948, accumulated time 10850.165558815002
+Hidden layer sizes: (300, 500, 400, 500), validation accuracy: 0.9432, accumulated time 10898.99522447586
+Hidden layer sizes: (300, 500, 500, 100), validation accuracy: 0.9512, accumulated time 10937.424632310867
+Hidden layer sizes: (300, 500, 500, 200), validation accuracy: 0.9556, accumulated time 10989.43472623825
+Hidden layer sizes: (300, 500, 500, 300), validation accuracy: 0.9528, accumulated time 11055.452290534973
+Hidden layer sizes: (300, 500, 500, 400), validation accuracy: 0.9412, accumulated time 11115.139049053192
+Hidden layer sizes: (300, 500, 500, 500), validation accuracy: 0.9468, accumulated time 11154.173522472382
+Hidden layer sizes: (400, 100, 100, 100), validation accuracy: 0.9464, accumulated time 11183.96904349327
+Hidden layer sizes: (400, 100, 100, 200), validation accuracy: 0.9436, accumulated time 11213.369196176529
+Hidden layer sizes: (400, 100, 100, 300), validation accuracy: 0.9456, accumulated time 11243.129009962082
+Hidden layer sizes: (400, 100, 100, 400), validation accuracy: 0.9456, accumulated time 11270.98337650299
+Hidden layer sizes: (400, 100, 100, 500), validation accuracy: 0.95, accumulated time 11301.387988090515
+Hidden layer sizes: (400, 100, 200, 100), validation accuracy: 0.9472, accumulated time 11321.607419252396
+Hidden layer sizes: (400, 100, 200, 200), validation accuracy: 0.95, accumulated time 11349.091175079346
+Hidden layer sizes: (400, 100, 200, 300), validation accuracy: 0.9484, accumulated time 11379.570967435837
+Hidden layer sizes: (400, 100, 200, 400), validation accuracy: 0.95, accumulated time 11407.88627243042
+Hidden layer sizes: (400, 100, 200, 500), validation accuracy: 0.9376, accumulated time 11434.006133794785
+Hidden layer sizes: (400, 100, 300, 100), validation accuracy: 0.95, accumulated time 11459.564142942429
+Hidden layer sizes: (400, 100, 300, 200), validation accuracy: 0.9476, accumulated time 11487.277304410934
+Hidden layer sizes: (400, 100, 300, 300), validation accuracy: 0.9504, accumulated time 11514.243260622025
+Hidden layer sizes: (400, 100, 300, 400), validation accuracy: 0.9504, accumulated time 11543.272048950195
+Hidden layer sizes: (400, 100, 300, 500), validation accuracy: 0.9408, accumulated time 11573.366086483002
+Hidden layer sizes: (400, 100, 400, 100), validation accuracy: 0.9468, accumulated time 11597.488087177277
+Hidden layer sizes: (400, 100, 400, 200), validation accuracy: 0.9504, accumulated time 11619.282798528671
+Hidden layer sizes: (400, 100, 400, 300), validation accuracy: 0.9472, accumulated time 11641.175253152847
+Hidden layer sizes: (400, 100, 400, 400), validation accuracy: 0.9492, accumulated time 11670.068982362747
+Hidden layer sizes: (400, 100, 400, 500), validation accuracy: 0.952, accumulated time 11703.63721203804
+Hidden layer sizes: (400, 100, 500, 100), validation accuracy: 0.948, accumulated time 11723.543976306915
+Hidden layer sizes: (400, 100, 500, 200), validation accuracy: 0.9544, accumulated time 11749.007878303528
+Hidden layer sizes: (400, 100, 500, 300), validation accuracy: 0.9424, accumulated time 11776.312670230865
+Hidden layer sizes: (400, 100, 500, 400), validation accuracy: 0.9532, accumulated time 11812.67624258995
+Hidden layer sizes: (400, 100, 500, 500), validation accuracy: 0.9464, accumulated time 11842.750989198685
+Hidden layer sizes: (400, 200, 100, 100), validation accuracy: 0.9508, accumulated time 11866.535912752151
+Hidden layer sizes: (400, 200, 100, 200), validation accuracy: 0.946, accumulated time 11890.18867611885
+Hidden layer sizes: (400, 200, 100, 300), validation accuracy: 0.9488, accumulated time 11917.086742401123
+Hidden layer sizes: (400, 200, 100, 400), validation accuracy: 0.9496, accumulated time 11946.310881376266
+Hidden layer sizes: (400, 200, 100, 500), validation accuracy: 0.948, accumulated time 11970.255086183548
+Hidden layer sizes: (400, 200, 200, 100), validation accuracy: 0.9528, accumulated time 11992.566794157028
+Hidden layer sizes: (400, 200, 200, 200), validation accuracy: 0.9492, accumulated time 12015.794913053513
+Hidden layer sizes: (400, 200, 200, 300), validation accuracy: 0.9472, accumulated time 12039.175673246384
+Hidden layer sizes: (400, 200, 200, 400), validation accuracy: 0.9504, accumulated time 12065.295592308044
+Hidden layer sizes: (400, 200, 200, 500), validation accuracy: 0.95, accumulated time 12095.192575931549
+Hidden layer sizes: (400, 200, 300, 100), validation accuracy: 0.9496, accumulated time 12121.362009763718
+Hidden layer sizes: (400, 200, 300, 200), validation accuracy: 0.9492, accumulated time 12145.843020677567
+Hidden layer sizes: (400, 200, 300, 300), validation accuracy: 0.9504, accumulated time 12169.634617567062
+Hidden layer sizes: (400, 200, 300, 400), validation accuracy: 0.9556, accumulated time 12197.685831069946
+Hidden layer sizes: (400, 200, 300, 500), validation accuracy: 0.9552, accumulated time 12229.92083287239
+Hidden layer sizes: (400, 200, 400, 100), validation accuracy: 0.9484, accumulated time 12252.964159965515
+Hidden layer sizes: (400, 200, 400, 200), validation accuracy: 0.9444, accumulated time 12287.841704368591
+Hidden layer sizes: (400, 200, 400, 300), validation accuracy: 0.928, accumulated time 12312.502519607544
+Hidden layer sizes: (400, 200, 400, 400), validation accuracy: 0.9492, accumulated time 12342.051883935928
+Hidden layer sizes: (400, 200, 400, 500), validation accuracy: 0.9424, accumulated time 12372.87022304535
+Hidden layer sizes: (400, 200, 500, 100), validation accuracy: 0.9532, accumulated time 12395.814752101898
+Hidden layer sizes: (400, 200, 500, 200), validation accuracy: 0.9408, accumulated time 12418.924419641495
+Hidden layer sizes: (400, 200, 500, 300), validation accuracy: 0.9532, accumulated time 12457.023706912994
+Hidden layer sizes: (400, 200, 500, 400), validation accuracy: 0.9512, accumulated time 12491.506555080414
+Hidden layer sizes: (400, 200, 500, 500), validation accuracy: 0.9564, accumulated time 12542.49875831604
+Hidden layer sizes: (400, 300, 100, 100), validation accuracy: 0.9448, accumulated time 12565.117395401001
+Hidden layer sizes: (400, 300, 100, 200), validation accuracy: 0.9456, accumulated time 12589.540413618088
+Hidden layer sizes: (400, 300, 100, 300), validation accuracy: 0.9532, accumulated time 12616.996491670609
+Hidden layer sizes: (400, 300, 100, 400), validation accuracy: 0.9384, accumulated time 12638.424804210663
+Hidden layer sizes: (400, 300, 100, 500), validation accuracy: 0.9516, accumulated time 12665.946008443832
+Hidden layer sizes: (400, 300, 200, 100), validation accuracy: 0.9472, accumulated time 12691.320709466934
+Hidden layer sizes: (400, 300, 200, 200), validation accuracy: 0.9432, accumulated time 12720.537329673767
+Hidden layer sizes: (400, 300, 200, 300), validation accuracy: 0.9508, accumulated time 12747.475404024124
+Hidden layer sizes: (400, 300, 200, 400), validation accuracy: 0.9536, accumulated time 12773.809557676315
+Hidden layer sizes: (400, 300, 200, 500), validation accuracy: 0.9516, accumulated time 12802.479003429413
+Hidden layer sizes: (400, 300, 300, 100), validation accuracy: 0.9484, accumulated time 12829.760224342346
+Hidden layer sizes: (400, 300, 300, 200), validation accuracy: 0.95, accumulated time 12855.051688432693
+Hidden layer sizes: (400, 300, 300, 300), validation accuracy: 0.934, accumulated time 12879.953091859818
+Hidden layer sizes: (400, 300, 300, 400), validation accuracy: 0.9512, accumulated time 12907.89865899086
+Hidden layer sizes: (400, 300, 300, 500), validation accuracy: 0.9392, accumulated time 12934.438885688782
+Hidden layer sizes: (400, 300, 400, 100), validation accuracy: 0.9484, accumulated time 12960.613189458847
+Hidden layer sizes: (400, 300, 400, 200), validation accuracy: 0.9548, accumulated time 12991.977450609207
+Hidden layer sizes: (400, 300, 400, 300), validation accuracy: 0.9532, accumulated time 13020.529135465622
+Hidden layer sizes: (400, 300, 400, 400), validation accuracy: 0.9568, accumulated time 13065.969720602036
+Hidden layer sizes: (400, 300, 400, 500), validation accuracy: 0.944, accumulated time 13095.737035512924
+Hidden layer sizes: (400, 300, 500, 100), validation accuracy: 0.9384, accumulated time 13126.243929386139
+Hidden layer sizes: (400, 300, 500, 200), validation accuracy: 0.95, accumulated time 13161.693330526352
+Hidden layer sizes: (400, 300, 500, 300), validation accuracy: 0.9508, accumulated time 13189.008278131485
+Hidden layer sizes: (400, 300, 500, 400), validation accuracy: 0.9468, accumulated time 13221.251439094543
+Hidden layer sizes: (400, 300, 500, 500), validation accuracy: 0.9524, accumulated time 13264.055562257767
+Hidden layer sizes: (400, 400, 100, 100), validation accuracy: 0.9496, accumulated time 13292.536432266235
+Hidden layer sizes: (400, 400, 100, 200), validation accuracy: 0.9496, accumulated time 13322.957352161407
+Hidden layer sizes: (400, 400, 100, 300), validation accuracy: 0.9488, accumulated time 13350.918428182602
+Hidden layer sizes: (400, 400, 100, 400), validation accuracy: 0.9372, accumulated time 13372.806024312973
+Hidden layer sizes: (400, 400, 100, 500), validation accuracy: 0.9524, accumulated time 13405.271994113922
+Hidden layer sizes: (400, 400, 200, 100), validation accuracy: 0.9476, accumulated time 13435.447236537933
+Hidden layer sizes: (400, 400, 200, 200), validation accuracy: 0.9508, accumulated time 13475.571342468262
+Hidden layer sizes: (400, 400, 200, 300), validation accuracy: 0.9448, accumulated time 13508.679957866669
+Hidden layer sizes: (400, 400, 200, 400), validation accuracy: 0.9568, accumulated time 13557.178940296173
+Hidden layer sizes: (400, 400, 200, 500), validation accuracy: 0.952, accumulated time 13599.322390794754
+Hidden layer sizes: (400, 400, 300, 100), validation accuracy: 0.9512, accumulated time 13629.611083745956
+Hidden layer sizes: (400, 400, 300, 200), validation accuracy: 0.9536, accumulated time 13663.349578142166
+Hidden layer sizes: (400, 400, 300, 300), validation accuracy: 0.9408, accumulated time 13691.954151391983
+Hidden layer sizes: (400, 400, 300, 400), validation accuracy: 0.9528, accumulated time 13726.846415042877
+Hidden layer sizes: (400, 400, 300, 500), validation accuracy: 0.9508, accumulated time 13767.04185962677
+Hidden layer sizes: (400, 400, 400, 100), validation accuracy: 0.9488, accumulated time 13800.917858362198
+Hidden layer sizes: (400, 400, 400, 200), validation accuracy: 0.9512, accumulated time 13837.080819129944
+Hidden layer sizes: (400, 400, 400, 300), validation accuracy: 0.9348, accumulated time 13869.756855726242
+Hidden layer sizes: (400, 400, 400, 400), validation accuracy: 0.9496, accumulated time 13914.70839548111
+Hidden layer sizes: (400, 400, 400, 500), validation accuracy: 0.9524, accumulated time 13958.51671242714
+Hidden layer sizes: (400, 400, 500, 100), validation accuracy: 0.9564, accumulated time 14005.6388297081
+Hidden layer sizes: (400, 400, 500, 200), validation accuracy: 0.9484, accumulated time 14035.3987596035
+Hidden layer sizes: (400, 400, 500, 300), validation accuracy: 0.9392, accumulated time 14086.331228017807
+Hidden layer sizes: (400, 400, 500, 400), validation accuracy: 0.9536, accumulated time 14158.599429368973
+Hidden layer sizes: (400, 400, 500, 500), validation accuracy: 0.9536, accumulated time 14237.593062877655
+Hidden layer sizes: (400, 500, 100, 100), validation accuracy: 0.95, accumulated time 14273.147043466568
+Hidden layer sizes: (400, 500, 100, 200), validation accuracy: 0.95, accumulated time 14308.638857126236
+Hidden layer sizes: (400, 500, 100, 300), validation accuracy: 0.9488, accumulated time 14343.171789646149
+Hidden layer sizes: (400, 500, 100, 400), validation accuracy: 0.9448, accumulated time 14385.43263053894
+Hidden layer sizes: (400, 500, 100, 500), validation accuracy: 0.95, accumulated time 14421.272942066193
+Hidden layer sizes: (400, 500, 200, 100), validation accuracy: 0.9516, accumulated time 14476.391817808151
+Hidden layer sizes: (400, 500, 200, 200), validation accuracy: 0.9516, accumulated time 14511.347307682037
+Hidden layer sizes: (400, 500, 200, 300), validation accuracy: 0.9504, accumulated time 14547.09145116806
+Hidden layer sizes: (400, 500, 200, 400), validation accuracy: 0.9504, accumulated time 14581.008905172348
+Hidden layer sizes: (400, 500, 200, 500), validation accuracy: 0.952, accumulated time 14630.245631933212
+Hidden layer sizes: (400, 500, 300, 100), validation accuracy: 0.9428, accumulated time 14679.849376916885
+Hidden layer sizes: (400, 500, 300, 200), validation accuracy: 0.95, accumulated time 14721.399455070496
+Hidden layer sizes: (400, 500, 300, 300), validation accuracy: 0.9468, accumulated time 14753.915966033936
+Hidden layer sizes: (400, 500, 300, 400), validation accuracy: 0.9508, accumulated time 14804.326286554337
+Hidden layer sizes: (400, 500, 300, 500), validation accuracy: 0.9568, accumulated time 14878.596553564072
+Hidden layer sizes: (400, 500, 400, 100), validation accuracy: 0.954, accumulated time 14933.526131391525
+Hidden layer sizes: (400, 500, 400, 200), validation accuracy: 0.9504, accumulated time 14977.525887489319
+Hidden layer sizes: (400, 500, 400, 300), validation accuracy: 0.948, accumulated time 15014.613485574722
+Hidden layer sizes: (400, 500, 400, 400), validation accuracy: 0.9488, accumulated time 15073.63895869255
+Hidden layer sizes: (400, 500, 400, 500), validation accuracy: 0.9508, accumulated time 15125.282422065735
+Hidden layer sizes: (400, 500, 500, 100), validation accuracy: 0.9536, accumulated time 15174.379311800003
+Hidden layer sizes: (400, 500, 500, 200), validation accuracy: 0.9516, accumulated time 15214.46850657463
+Hidden layer sizes: (400, 500, 500, 300), validation accuracy: 0.954, accumulated time 15257.959378004074
+Hidden layer sizes: (400, 500, 500, 400), validation accuracy: 0.9532, accumulated time 15318.394034862518
+Hidden layer sizes: (400, 500, 500, 500), validation accuracy: 0.9452, accumulated time 15361.407173156738
+Hidden layer sizes: (500, 100, 100, 100), validation accuracy: 0.9496, accumulated time 15386.21557378769
+Hidden layer sizes: (500, 100, 100, 200), validation accuracy: 0.9504, accumulated time 15409.631952047348
+Hidden layer sizes: (500, 100, 100, 300), validation accuracy: 0.9492, accumulated time 15433.65371131897
+Hidden layer sizes: (500, 100, 100, 400), validation accuracy: 0.95, accumulated time 15453.043858528137
+Hidden layer sizes: (500, 100, 100, 500), validation accuracy: 0.9512, accumulated time 15476.52531337738
+Hidden layer sizes: (500, 100, 200, 100), validation accuracy: 0.9508, accumulated time 15500.493332147598
+Hidden layer sizes: (500, 100, 200, 200), validation accuracy: 0.9496, accumulated time 15523.908713817596
+Hidden layer sizes: (500, 100, 200, 300), validation accuracy: 0.9432, accumulated time 15547.01245188713
+Hidden layer sizes: (500, 100, 200, 400), validation accuracy: 0.9504, accumulated time 15570.76306796074
+Hidden layer sizes: (500, 100, 200, 500), validation accuracy: 0.9508, accumulated time 15603.488171577454
+Hidden layer sizes: (500, 100, 300, 100), validation accuracy: 0.95, accumulated time 15627.826085090637
+Hidden layer sizes: (500, 100, 300, 200), validation accuracy: 0.9492, accumulated time 15653.492414474487
+Hidden layer sizes: (500, 100, 300, 300), validation accuracy: 0.9528, accumulated time 15681.067669391632
+Hidden layer sizes: (500, 100, 300, 400), validation accuracy: 0.9472, accumulated time 15714.551632165909
+Hidden layer sizes: (500, 100, 300, 500), validation accuracy: 0.952, accumulated time 15744.337983131409
+Hidden layer sizes: (500, 100, 400, 100), validation accuracy: 0.95, accumulated time 15771.672882556915
+Hidden layer sizes: (500, 100, 400, 200), validation accuracy: 0.9484, accumulated time 15800.46538901329
+Hidden layer sizes: (500, 100, 400, 300), validation accuracy: 0.9436, accumulated time 15826.131751298904
+Hidden layer sizes: (500, 100, 400, 400), validation accuracy: 0.9424, accumulated time 15859.215276241302
+Hidden layer sizes: (500, 100, 400, 500), validation accuracy: 0.95, accumulated time 15891.156367063522
+Hidden layer sizes: (500, 100, 500, 100), validation accuracy: 0.9448, accumulated time 15913.207904815674
+Hidden layer sizes: (500, 100, 500, 200), validation accuracy: 0.9352, accumulated time 15934.447105169296
+Hidden layer sizes: (500, 100, 500, 300), validation accuracy: 0.9528, accumulated time 15970.411381721497
+Hidden layer sizes: (500, 100, 500, 400), validation accuracy: 0.9436, accumulated time 15999.38927602768
+Hidden layer sizes: (500, 100, 500, 500), validation accuracy: 0.9396, accumulated time 16029.92860507965
+Hidden layer sizes: (500, 200, 100, 100), validation accuracy: 0.9468, accumulated time 16055.799419879913
+Hidden layer sizes: (500, 200, 100, 200), validation accuracy: 0.9504, accumulated time 16078.5542345047
+Hidden layer sizes: (500, 200, 100, 300), validation accuracy: 0.9516, accumulated time 16102.897640943527
+Hidden layer sizes: (500, 200, 100, 400), validation accuracy: 0.9544, accumulated time 16125.643812656403
+Hidden layer sizes: (500, 200, 100, 500), validation accuracy: 0.9556, accumulated time 16166.268170833588
+Hidden layer sizes: (500, 200, 200, 100), validation accuracy: 0.9456, accumulated time 16189.57783460617
+Hidden layer sizes: (500, 200, 200, 200), validation accuracy: 0.95, accumulated time 16209.212328195572
+Hidden layer sizes: (500, 200, 200, 300), validation accuracy: 0.9504, accumulated time 16231.413954734802
+Hidden layer sizes: (500, 200, 200, 400), validation accuracy: 0.9556, accumulated time 16262.661390066147
+Hidden layer sizes: (500, 200, 200, 500), validation accuracy: 0.9512, accumulated time 16289.85717010498
+Hidden layer sizes: (500, 200, 300, 100), validation accuracy: 0.9496, accumulated time 16316.238619089127
+Hidden layer sizes: (500, 200, 300, 200), validation accuracy: 0.9524, accumulated time 16343.298269748688
+Hidden layer sizes: (500, 200, 300, 300), validation accuracy: 0.956, accumulated time 16376.396755695343
+Hidden layer sizes: (500, 200, 300, 400), validation accuracy: 0.9516, accumulated time 16416.184860944748
+Hidden layer sizes: (500, 200, 300, 500), validation accuracy: 0.9492, accumulated time 16444.377465963364
+Hidden layer sizes: (500, 200, 400, 100), validation accuracy: 0.9476, accumulated time 16472.73263692856
+Hidden layer sizes: (500, 200, 400, 200), validation accuracy: 0.9536, accumulated time 16503.242555379868
+Hidden layer sizes: (500, 200, 400, 300), validation accuracy: 0.9532, accumulated time 16535.443589925766
+Hidden layer sizes: (500, 200, 400, 400), validation accuracy: 0.9448, accumulated time 16571.586463451385
+Hidden layer sizes: (500, 200, 400, 500), validation accuracy: 0.9396, accumulated time 16593.519825458527
+Hidden layer sizes: (500, 200, 500, 100), validation accuracy: 0.9476, accumulated time 16619.75696206093
+Hidden layer sizes: (500, 200, 500, 200), validation accuracy: 0.9508, accumulated time 16645.132101774216
+Hidden layer sizes: (500, 200, 500, 300), validation accuracy: 0.9492, accumulated time 16675.30609726906
+Hidden layer sizes: (500, 200, 500, 400), validation accuracy: 0.9312, accumulated time 16706.04693007469
+Hidden layer sizes: (500, 200, 500, 500), validation accuracy: 0.9552, accumulated time 16743.32124853134
+Hidden layer sizes: (500, 300, 100, 100), validation accuracy: 0.9488, accumulated time 16776.299057006836
+Hidden layer sizes: (500, 300, 100, 200), validation accuracy: 0.9484, accumulated time 16809.017559289932
+Hidden layer sizes: (500, 300, 100, 300), validation accuracy: 0.9472, accumulated time 16836.78729557991
+Hidden layer sizes: (500, 300, 100, 400), validation accuracy: 0.9488, accumulated time 16865.924881458282
+Hidden layer sizes: (500, 300, 100, 500), validation accuracy: 0.952, accumulated time 16896.55397081375
+Hidden layer sizes: (500, 300, 200, 100), validation accuracy: 0.954, accumulated time 16928.370884656906
+Hidden layer sizes: (500, 300, 200, 200), validation accuracy: 0.948, accumulated time 16957.94579267502
+Hidden layer sizes: (500, 300, 200, 300), validation accuracy: 0.9436, accumulated time 16980.770752429962
+Hidden layer sizes: (500, 300, 200, 400), validation accuracy: 0.934, accumulated time 17005.135104894638
+Hidden layer sizes: (500, 300, 200, 500), validation accuracy: 0.9532, accumulated time 17039.289766311646
+Hidden layer sizes: (500, 300, 300, 100), validation accuracy: 0.9524, accumulated time 17070.989991426468
+Hidden layer sizes: (500, 300, 300, 200), validation accuracy: 0.952, accumulated time 17099.767034053802
+Hidden layer sizes: (500, 300, 300, 300), validation accuracy: 0.95, accumulated time 17129.72542667389
+Hidden layer sizes: (500, 300, 300, 400), validation accuracy: 0.9528, accumulated time 17164.265072584152
+Hidden layer sizes: (500, 300, 300, 500), validation accuracy: 0.9536, accumulated time 17196.40811395645
+Hidden layer sizes: (500, 300, 400, 100), validation accuracy: 0.952, accumulated time 17226.273247003555
+Hidden layer sizes: (500, 300, 400, 200), validation accuracy: 0.9528, accumulated time 17254.71418738365
+Hidden layer sizes: (500, 300, 400, 300), validation accuracy: 0.9352, accumulated time 17282.312888145447
+Hidden layer sizes: (500, 300, 400, 400), validation accuracy: 0.9504, accumulated time 17311.459941148758
+Hidden layer sizes: (500, 300, 400, 500), validation accuracy: 0.9328, accumulated time 17342.49370408058
+Hidden layer sizes: (500, 300, 500, 100), validation accuracy: 0.95, accumulated time 17376.684390306473
+Hidden layer sizes: (500, 300, 500, 200), validation accuracy: 0.936, accumulated time 17417.08634328842
+Hidden layer sizes: (500, 300, 500, 300), validation accuracy: 0.9552, accumulated time 17465.366230249405
+Hidden layer sizes: (500, 300, 500, 400), validation accuracy: 0.9484, accumulated time 17511.28243803978
+Hidden layer sizes: (500, 300, 500, 500), validation accuracy: 0.9568, accumulated time 17562.79966688156
+Hidden layer sizes: (500, 400, 100, 100), validation accuracy: 0.9516, accumulated time 17590.815744638443
+Hidden layer sizes: (500, 400, 100, 200), validation accuracy: 0.9508, accumulated time 17619.423240423203
+Hidden layer sizes: (500, 400, 100, 300), validation accuracy: 0.9308, accumulated time 17646.95561170578
+Hidden layer sizes: (500, 400, 100, 400), validation accuracy: 0.954, accumulated time 17681.846304416656
+Hidden layer sizes: (500, 400, 100, 500), validation accuracy: 0.9532, accumulated time 17712.661895513535
+Hidden layer sizes: (500, 400, 200, 100), validation accuracy: 0.9524, accumulated time 17746.42460513115
+Hidden layer sizes: (500, 400, 200, 200), validation accuracy: 0.9496, accumulated time 17775.58262848854
+Hidden layer sizes: (500, 400, 200, 300), validation accuracy: 0.9528, accumulated time 17805.115649223328
+Hidden layer sizes: (500, 400, 200, 400), validation accuracy: 0.9436, accumulated time 17829.271052837372
+Hidden layer sizes: (500, 400, 200, 500), validation accuracy: 0.9536, accumulated time 17864.51380252838
+Hidden layer sizes: (500, 400, 300, 100), validation accuracy: 0.9524, accumulated time 17895.599670648575
+Hidden layer sizes: (500, 400, 300, 200), validation accuracy: 0.9384, accumulated time 17921.940228700638
+Hidden layer sizes: (500, 400, 300, 300), validation accuracy: 0.9376, accumulated time 17951.061351060867
+Hidden layer sizes: (500, 400, 300, 400), validation accuracy: 0.9524, accumulated time 17995.047720193863
+Hidden layer sizes: (500, 400, 300, 500), validation accuracy: 0.9548, accumulated time 18035.781785964966
+Hidden layer sizes: (500, 400, 400, 100), validation accuracy: 0.9544, accumulated time 18088.77606511116
+Hidden layer sizes: (500, 400, 400, 200), validation accuracy: 0.956, accumulated time 18135.036353111267
+Hidden layer sizes: (500, 400, 400, 300), validation accuracy: 0.9488, accumulated time 18174.472888708115
+Hidden layer sizes: (500, 400, 400, 400), validation accuracy: 0.9552, accumulated time 18215.52011871338
+Hidden layer sizes: (500, 400, 400, 500), validation accuracy: 0.9444, accumulated time 18251.376228809357
+Hidden layer sizes: (500, 400, 500, 100), validation accuracy: 0.9544, accumulated time 18288.539843320847
+Hidden layer sizes: (500, 400, 500, 200), validation accuracy: 0.942, accumulated time 18319.28063440323
+Hidden layer sizes: (500, 400, 500, 300), validation accuracy: 0.9528, accumulated time 18378.968014478683
+Hidden layer sizes: (500, 400, 500, 400), validation accuracy: 0.9048, accumulated time 18420.861978292465
+Hidden layer sizes: (500, 400, 500, 500), validation accuracy: 0.9556, accumulated time 18474.38185286522
+Hidden layer sizes: (500, 500, 100, 100), validation accuracy: 0.9472, accumulated time 18505.43081855774
+Hidden layer sizes: (500, 500, 100, 200), validation accuracy: 0.9532, accumulated time 18543.55486536026
+Hidden layer sizes: (500, 500, 100, 300), validation accuracy: 0.9488, accumulated time 18575.613132238388
+Hidden layer sizes: (500, 500, 100, 400), validation accuracy: 0.9448, accumulated time 18602.603491544724
+Hidden layer sizes: (500, 500, 100, 500), validation accuracy: 0.9476, accumulated time 18635.564344882965
+Hidden layer sizes: (500, 500, 200, 100), validation accuracy: 0.9448, accumulated time 18666.14330649376
+Hidden layer sizes: (500, 500, 200, 200), validation accuracy: 0.9448, accumulated time 18696.038358926773
+Hidden layer sizes: (500, 500, 200, 300), validation accuracy: 0.9364, accumulated time 18722.576916456223
+Hidden layer sizes: (500, 500, 200, 400), validation accuracy: 0.9424, accumulated time 18757.13535451889
+Hidden layer sizes: (500, 500, 200, 500), validation accuracy: 0.9516, accumulated time 18794.132920503616
+Hidden layer sizes: (500, 500, 300, 100), validation accuracy: 0.9584, accumulated time 18843.61519384384
+Hidden layer sizes: (500, 500, 300, 200), validation accuracy: 0.952, accumulated time 18880.297097682953
+Hidden layer sizes: (500, 500, 300, 300), validation accuracy: 0.9536, accumulated time 18918.384240865707
+Hidden layer sizes: (500, 500, 300, 400), validation accuracy: 0.952, accumulated time 18963.21685242653
+Hidden layer sizes: (500, 500, 300, 500), validation accuracy: 0.9548, accumulated time 19023.73002409935
+Hidden layer sizes: (500, 500, 400, 100), validation accuracy: 0.95, accumulated time 19060.845770597458
+Hidden layer sizes: (500, 500, 400, 200), validation accuracy: 0.9488, accumulated time 19118.76739525795
+Hidden layer sizes: (500, 500, 400, 300), validation accuracy: 0.9512, accumulated time 19165.1164457798
+Hidden layer sizes: (500, 500, 400, 400), validation accuracy: 0.9332, accumulated time 19216.816186904907
+Hidden layer sizes: (500, 500, 400, 500), validation accuracy: 0.9372, accumulated time 19265.775257349014
+Hidden layer sizes: (500, 500, 500, 100), validation accuracy: 0.95, accumulated time 19310.0977268219
+Hidden layer sizes: (500, 500, 500, 200), validation accuracy: 0.9424, accumulated time 19347.012008666992
+Hidden layer sizes: (500, 500, 500, 300), validation accuracy: 0.944, accumulated time 19379.835230112076
+Hidden layer sizes: (500, 500, 500, 400), validation accuracy: 0.9388, accumulated time 19430.93361711502
+Hidden layer sizes: (500, 500, 500, 500), validation accuracy: 0.958, accumulated time 19517.31071639061
+Grid search done!
