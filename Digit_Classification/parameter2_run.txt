@@ -1,0 +1,60 @@
+learning_rates = [0.1, 0.01, 0.001, 0.0001]
+activator_f = ['identity', 'logistic', 'tanh', 'relu']
+
+sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(500, 400, 400, 200),activation='relu',alpha=0.0001,batch_size='auto',learning_rate_init=lrate, max_iter=200)
+
+Xtrain[:15000, :]
+Xval[:5000, :]
+
+total time: 10008 s = 167 min = 2h 45 min
+
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.1, activator function: identity, validation accuracy: 0.0992, accumulated time 584.6742930412292
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.1, activator function: logistic, validation accuracy: 0.0992, accumulated time 1076.9835121631622
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.1, activator function: tanh, validation accuracy: 0.1058, accumulated time 1198.3567368984222
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.1, activator function: relu, validation accuracy: 0.1182, accumulated time 1728.0197169780731
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.01, activator function: identity, validation accuracy: 0.9088, accumulated time 1944.5268108844757
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.01, activator function: logistic, validation accuracy: 0.5456, accumulated time 2057.284232854843
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.01, activator function: tanh, validation accuracy: 0.9066, accumulated time 2155.3635828495026
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.01, activator function: relu, validation accuracy: 0.913, accumulated time 2294.8278138637543
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.001, activator function: identity, validation accuracy: 0.9468, accumulated time 2359.4401886463165
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.001, activator function: logistic, validation accuracy: 0.9484, accumulated time 2433.073320388794
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.001, activator function: tanh, validation accuracy: 0.9446, accumulated time 2503.841152906418
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.001, activator function: relu, validation accuracy: 0.9486, accumulated time 2570.337464570999
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.0001, activator function: identity, validation accuracy: 0.8972, accumulated time 2646.493816137314
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.0001, activator function: logistic, validation accuracy: 0.899, accumulated time 2719.8127930164337
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.0001, activator function: tanh, validation accuracy: 0.8978, accumulated time 2802.1375699043274
+Hidden layer sizes: (500, 500, 500, 500), learning rate: 0.0001, activator function: relu, validation accuracy: 0.9002, accumulated time 2881.276906490326
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.1, activator function: identity, validation accuracy: 0.102, accumulated time 3392.7336082458496
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.1, activator function: logistic, validation accuracy: 0.102, accumulated time 3856.249766111374
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.1, activator function: tanh, validation accuracy: 0.0992, accumulated time 4394.283663511276
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.1, activator function: relu, validation accuracy: 0.102, accumulated time 4969.407821416855
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.01, activator function: identity, validation accuracy: 0.9326, accumulated time 5105.41121172905
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.01, activator function: logistic, validation accuracy: 0.91, accumulated time 5224.147041797638
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.01, activator function: tanh, validation accuracy: 0.9242, accumulated time 5322.484596967697
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.01, activator function: relu, validation accuracy: 0.9112, accumulated time 5472.819851875305
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, activator function: identity, validation accuracy: 0.957, accumulated time 5535.684438705444
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, activator function: logistic, validation accuracy: 0.9442, accumulated time 5601.604839801788
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, activator function: tanh, validation accuracy: 0.944, accumulated time 5667.433485507965
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, activator function: relu, validation accuracy: 0.9498, accumulated time 5730.400797843933
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.0001, activator function: identity, validation accuracy: 0.9078, accumulated time 5803.503956317902
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.0001, activator function: logistic, validation accuracy: 0.9018, accumulated time 5879.645972490311
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.0001, activator function: tanh, validation accuracy: 0.9022, accumulated time 5955.730144500732
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.0001, activator function: relu, validation accuracy: 0.9068, accumulated time 6037.875079870224
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.1, activator function: identity, validation accuracy: 0.102, accumulated time 6572.858394145966
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.1, activator function: logistic, validation accuracy: 0.0964, accumulated time 6806.999439716339
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.1, activator function: tanh, validation accuracy: 0.102, accumulated time 7349.454076290131
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.1, activator function: relu, validation accuracy: 0.1182, accumulated time 7845.246002674103
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.01, activator function: identity, validation accuracy: 0.858, accumulated time 8062.181337594986
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.01, activator function: logistic, validation accuracy: 0.924, accumulated time 8227.528762340546
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.01, activator function: tanh, validation accuracy: 0.8898, accumulated time 8455.854767799377
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.01, activator function: relu, validation accuracy: 0.91, accumulated time 8594.894701004028
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.001, activator function: identity, validation accuracy: 0.9526, accumulated time 8651.712657690048
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.001, activator function: logistic, validation accuracy: 0.9488, accumulated time 8720.683094501495
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.001, activator function: tanh, validation accuracy: 0.9382, accumulated time 8787.010605335236
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.001, activator function: relu, validation accuracy: 0.9424, accumulated time 8847.143689393997
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.0001, activator function: identity, validation accuracy: 0.9048, accumulated time 8920.597130060196
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.0001, activator function: logistic, validation accuracy: 0.8996, accumulated time 8997.008655071259
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.0001, activator function: tanh, validation accuracy: 0.8858, accumulated time 9070.39028787613
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), learning rate: 0.0001, activator function: relu, validation accuracy: 0.8978, accumulated time 9144.310479402542
+Hidden layer sizes: (500, 500, 500, 500, 500, 500, 500), learning rate: 0.1, activator function: identity, validation accuracy: 0.1058, accumulated time 9595.790508031845
+Hidden layer sizes: (500, 500, 500, 500, 500, 500, 500), learning rate: 0.1, activator function: logistic, validation accuracy: 0.102, accumulated time 10008.876309394836
