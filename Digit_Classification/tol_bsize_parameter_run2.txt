@@ -1,0 +1,45 @@
+batch_sizes = [100, 300, 500]
+tols = [0.01, 0.001, 0.0001, 0.00001]
+
+sklearn.neural_network.MLPClassifier(
+            hidden_layer_sizes=(500, 500, 500, 500, 500),
+            activation='relu',
+            alpha=0.0001,
+            batch_size=batch_size,
+            learning_rate_init=0.001,
+            max_iter=200,
+            tol=tol)
+        model.fit(Xtrain[:5000, :], ytrain[:5000])
+
+        err = model.score(Xval[:2500, :], yval[:2500])
+
+
+
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 500, tolerance: 0.0001"
+            validation accuracy: 0.9508, accumulated time 26.633914470672607
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 500, tolerance: 1e-05"
+            validation accuracy: 0.9548, accumulated time 79.89493489265442
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 500, tolerance: 1e-06"
+            validation accuracy: 0.95, accumulated time 190.74187064170837
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 800, tolerance: 0.0001"
+            validation accuracy: 0.9516, accumulated time 235.569433927536
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 800, tolerance: 1e-05"
+            validation accuracy: 0.95, accumulated time 292.6059868335724
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 800, tolerance: 1e-06"
+            validation accuracy: 0.9496, accumulated time 403.2014482021332
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 1000, tolerance: 0.0001"
+            validation accuracy: 0.9464, accumulated time 451.4500250816345
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 1000, tolerance: 1e-05"
+            validation accuracy: 0.9484, accumulated time 507.5580756664276
+Hidden layer sizes: (500, 500, 500, 500, 500), learning rate: 0.001, 
+                activator function: 'relu', batch size: 1000, tolerance: 1e-06"
+            validation accuracy: 0.9364, accumulated time 550.3537135124207
+Grid search done!

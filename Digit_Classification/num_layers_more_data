@@ -1,0 +1,5 @@
+Hidden layer sizes: (500, 500, 500, 500, 500, 500), 
+    validation accuracy: 0.9792, accumulated time 749.9264922142029
+Hidden layer sizes: (500, 500, 500, 500, 500, 500, 500), 
+    validation accuracy: 0.9780571428571428, accumulated time 1811.0002691745758
+Grid search done!
