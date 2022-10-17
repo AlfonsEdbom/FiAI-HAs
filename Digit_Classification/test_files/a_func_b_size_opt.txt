@@ -1,0 +1,105 @@
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: adam, batch size: 300, learning rate: 0.001, validation accuracy: 0.8949714285714285, accumulated time 1042.9145200252533
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: adam, batch size: 500, learning rate: 0.001, validation accuracy: 0.8934857142857143, accumulated time 2277.1820878982544
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: adam, batch size: 800, learning rate: 0.001, validation accuracy: 0.8989714285714285, accumulated time 3649.5883836746216
+ConvergenceWarning: lbfgs failed to converge (status=1):
+
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: lbfgs, batch size: 300, learning rate: 0.001, validation accuracy: 0.8921142857142857, accumulated time 4701.249094009399
+ConvergenceWarning: lbfgs failed to converge (status=1):
+
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: lbfgs, batch size: 500, learning rate: 0.001, validation accuracy: 0.8901714285714286, accumulated time 5730.969455242157
+ConvergenceWarning: lbfgs failed to converge (status=1):
+
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: lbfgs, batch size: 800, learning rate: 0.001, validation accuracy: 0.8882285714285715, accumulated time 6777.298418045044
+ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: sgd, batch size: 300, learning rate: 0.001, validation accuracy: 0.0984, accumulated time 9715.074183702469
+
+ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: sgd, batch size: 500, learning rate: 0.001, validation accuracy: 0.0984, accumulated time 12042.070677757263
+ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+
+
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: identity, optimizer: sgd, batch size: 800, learning rate: 0.001, validation accuracy: 0.0984, accumulated time 13898.08825135231
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: adam, batch size: 300, learning rate: 0.001, validation accuracy: 0.9722285714285714, accumulated time 17828.95329976082
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: adam, batch size: 500, learning rate: 0.001, validation accuracy: 0.9691428571428572, accumulated time 20456.945175409317
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: adam, batch size: 800, learning rate: 0.001, validation accuracy: 0.9629714285714286, accumulated time 21717.88045525551
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: lbfgs, batch size: 300, learning rate: 0.001, validation accuracy: 0.11691428571428572, accumulated time 21761.26847052574
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: lbfgs, batch size: 500, learning rate: 0.001, validation accuracy: 0.11691428571428572, accumulated time 21804.36526441574
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: lbfgs, batch size: 800, learning rate: 0.001, validation accuracy: 0.11691428571428572, accumulated time 21841.22971868515
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: sgd, batch size: 300, learning rate: 0.001, validation accuracy: 0.11691428571428572, accumulated time 22136.799604415894
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: sgd, batch size: 500, learning rate: 0.001, validation accuracy: 0.11691428571428572, accumulated time 22370.04309988022
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: logistic, optimizer: sgd, batch size: 800, learning rate: 0.001, validation accuracy: 0.0984, accumulated time 22517.121929883957
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: adam, batch size: 300, learning rate: 0.001, validation accuracy: 0.9533714285714285, accumulated time 23553.63114285469
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: adam, batch size: 500, learning rate: 0.001, validation accuracy: 0.9488, accumulated time 24682.56528711319
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: adam, batch size: 800, learning rate: 0.001, validation accuracy: 0.9614857142857143, accumulated time 25739.101962804794
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: lbfgs, batch size: 300, learning rate: 0.001, validation accuracy: 0.9601142857142857, accumulated time 26367.112363100052
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: lbfgs, batch size: 500, learning rate: 0.001, validation accuracy: 0.9602285714285714, accumulated time 27016.24520254135
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: lbfgs, batch size: 800, learning rate: 0.001, validation accuracy: 0.9602285714285714, accumulated time 27648.661631584167
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: sgd, batch size: 300, learning rate: 0.001, validation accuracy: 0.9573714285714285, accumulated time 28908.379166841507
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: sgd, batch size: 500, learning rate: 0.001, validation accuracy: 0.9450285714285714, accumulated time 30332.10627222061
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: tanh, optimizer: sgd, batch size: 800, learning rate: 0.001, validation accuracy: 0.9384, accumulated time 32188.721187114716
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: adam, batch size: 300, learning rate: 0.001, validation accuracy: 0.9762285714285714, accumulated time 33409.0468814373
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: adam, batch size: 500, learning rate: 0.001, validation accuracy: 0.9701714285714286, accumulated time 33867.54908037186
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: adam, batch size: 800, learning rate: 0.001, validation accuracy: 0.9706285714285714, accumulated time 34417.67850923538
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: lbfgs, batch size: 300, learning rate: 0.001, validation accuracy: 0.9715428571428572, accumulated time 35174.05427980423
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: lbfgs, batch size: 500, learning rate: 0.001, validation accuracy: 0.9713142857142857, accumulated time 36113.050137043
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: lbfgs, batch size: 800, learning rate: 0.001, validation accuracy: 0.9696, accumulated time 36727.51624894142
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: sgd, batch size: 300, learning rate: 0.001, validation accuracy: 0.9692571428571428, accumulated time 37474.52585840225
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: sgd, batch size: 500, learning rate: 0.001, validation accuracy: 0.968, accumulated time 38150.60407161713
+Hidden layer sizes: (700, 700, 700, 700, 700), activation function: relu, optimizer: sgd, batch size: 800, learning rate: 0.001, validation accuracy: 0.9651428571428572, accumulated time 38905.16655397415
+Grid search done!
+The best values was {'relu': {'adam': {300: 0.9762285714285714}}}
+All items were: {'identity': 
+                            {'adam': 
+                                {300: 0.8949714285714285, 
+                                500: 0.8934857142857143, 
+                                800: 0.8989714285714285}, 
+                            'lbfgs': 
+                                {300: 0.8921142857142857, 
+                                500: 0.8901714285714286, 
+                                800: 0.8882285714285715}, 
+                            'sgd': 
+                                {300: 0.0984, 
+                                500: 0.0984, 
+                                800: 0.0984}}, 
+                'logistic': 
+                            {'adam': 
+                                {300: 0.9722285714285714, 
+                                500: 0.9691428571428572, 
+                                800: 0.9629714285714286}, 
+                            'lbfgs': 
+                                {300: 0.11691428571428572, 
+                                500: 0.11691428571428572, 
+                                800: 0.11691428571428572}, 
+                            'sgd': 
+                                {300: 0.11691428571428572, 
+                                500: 0.11691428571428572, 
+                                800: 0.0984}}, 
+                'tanh': 
+                            {'adam': 
+                                {300: 0.9533714285714285, 
+                                500: 0.9488, 
+                                800: 0.9614857142857143}, 
+                            'lbfgs': 
+                                {300: 
+                                0.9601142857142857, 
+                                500: 0.9602285714285714, 
+                                800: 0.9602285714285714}, 
+                            'sgd': 
+                                {300: 0.9573714285714285, 
+                                500: 0.9450285714285714, 
+                                800: 0.9384}}, 
+                'relu': 
+                            {'adam': 
+                                {300: 0.9762285714285714, 
+                                500: 0.9701714285714286, 
+                                800: 0.9706285714285714}, 
+                             'lbfgs': 
+                                {300: 0.9715428571428572, 
+                                500: 0.9713142857142857, 
+                                800: 0.9696}, 
+                            'sgd': 
+                            {300: 0.9692571428571428, 
+                            500: 0.968, 
+                            800: 0.9651428571428572}}}
